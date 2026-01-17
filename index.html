@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <meta name="description" content="متجر نونا بيوتي | Nona Beauty - الوجهة الأولى في السعودية والخليج لمنتجات البهاق، كريم بنكوين، والمنتجات الإيطالية الفاخرة.">
-    <meta name="keywords" content="بنكوين, بهاق, نونا بيوتي, Kleraderm, توحيد لون, السعودية, العناية بالبشرة">
     <meta name="theme-color" content="#c02669">
     <title>نونا بيوتي | Nona Beauty</title>
     
@@ -189,8 +188,14 @@
         }
 
         .card-details { padding: 15px 5px 5px; flex-grow: 1; display: flex; flex-direction: column; }
-        .p-name { font-size: 1.05rem; font-weight: 700; color: var(--dark); margin-bottom: 8px; line-height: 1.4; }
-        .p-desc { font-size: 0.85rem; color: var(--gray); margin-bottom: 15px; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+        .p-name { font-size: 1.05rem; font-weight: 700; color: var(--dark); margin-bottom: 4px; line-height: 1.4; }
+        
+        /* وصف المنتج المختصر */
+        .p-desc { 
+            font-size: 0.85rem; color: var(--gray); margin-bottom: 12px; 
+            line-height: 1.4; height: 38px; overflow: hidden; 
+            display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical;
+        }
         
         .price-row { 
             margin-top: auto; display: flex; align-items: center; gap: 10px; margin-bottom: 15px;
@@ -198,7 +203,7 @@
         .price { font-size: 1.2rem; font-weight: 900; color: var(--primary); }
         .old-p { font-size: 0.9rem; text-decoration: line-through; color: var(--gray); opacity: 0.6; }
 
-        /* --- زر الواتساب الجديد --- */
+        /* زر الواتساب للطلب */
         .btn-wa-order {
             width: 100%; padding: 12px; border: none; border-radius: 15px;
             background: var(--whatsapp); color: white; font-weight: 700; font-size: 1rem;
@@ -279,8 +284,8 @@
             .products-grid { grid-template-columns: repeat(2, 1fr); gap: 10px; }
             .product-card { padding: 10px; border-radius: 15px; }
             .img-wrapper { height: 140px; border-radius: 12px; }
-            .p-name { font-size: 0.85rem; height: 36px; overflow: hidden; margin-bottom: 5px; }
-            .p-desc { display: none; }
+            .p-name { font-size: 0.85rem; height: 36px; overflow: hidden; margin-bottom: 2px; }
+            .p-desc { font-size: 0.7rem; height: 30px; margin-bottom: 8px; } /* تصغير الوصف للجوال */
             .price { font-size: 1rem; }
             .btn-wa-order { padding: 8px; font-size: 0.85rem; }
             
@@ -378,7 +383,7 @@
                 <div class="trust-row">
                     <span class="trust-item"><i class="fa-solid fa-check-circle"></i> أصلي 100%</span>
                     <span class="trust-item"><i class="fa-solid fa-truck-fast"></i> شحن سريع</span>
-                    <span class="trust-item"><i class="fa-solid fa-lock"></i> تاريخ جديد</span>
+                    <span class="trust-item"><i class="fa-solid fa-lock"></i> سرية تامة</span>
                 </div>
             </div>
 
@@ -465,45 +470,45 @@
 
         // --- Data & Rendering ---
         const italianData = [
-            {name: "جل واقي شمس وتجاعيد Kleraderm", price: 97, old: 150, img: "https://cdn.salla.sa/EZjdor/f4fa3c9d-b86b-491a-a2f1-15d13ed7ddf0-500x432.98969072165-EPZp5vjHOvl1h82ZoHstznTO0zddJNWHwtGIVngH.png", desc: "حماية فائقة ومضاد تجاعيد"},
-            {name: "غسول للوجه والنضارة Kleraderm", price: 100, old: 195, img: "https://cdn.salla.sa/EZjdor/0e49e5b6-0e5e-4088-8977-f3062d1f5383-500x432.98969072165-rb30ZPbIGKrOLeCibzgWeQda9dS0pPagJ0JKt1UU.png", desc: "ينظف بعمق ويمنح نضارة"},
-            {name: "كريم مرطب وحماية Kleraderm", price: 97, old: 154, img: "https://cdn.salla.sa/EZjdor/d50a4c04-5f9e-4cb3-9d22-fc8a18b30b13-500x432.98969072165-uSAVsBTtkq3TQeGbQZDcgbapGE2KwpRbLYKHrE2Z.png", desc: "ترطيب يومي وحماية"},
-            {name: "كريم مبيض لليد Kleraderm", price: 150, old: 250, img: "https://cdn.salla.sa/EZjdor/4d5dc83d-880a-45ff-948e-17faf4f266ad-500x432.98969072165-QbtgT689FaZd0DaBEglV7azox1FsxuOCC9LOa8EC.png", desc: "عناية خاصة وتفتيح لليدين"},
-            {name: "لوشن مبيض للجسم Kleraderm", price: 150, old: 285, img: "https://cdn.salla.sa/EZjdor/4f642cd3-7c10-4df2-8907-b033e76056c9-500x432.98969072165-TQFBrloeT8sdECBVUCVbGpv6TZlHayN4OvS80Dq8.png", desc: "توحيد لون الجسم بالكامل"},
-            {name: "سيروم للهالات Kleraderm", price: 150, old: 295, img: "https://cdn.salla.sa/EZjdor/0af58d78-ff62-4e14-b302-cb8c862c073b-500x432.98969072165-cf6P4J8vMZnrIVxeqjExTMRkrlUiMvwIsKGnzmMt.png", desc: "علاج مركز للهالات السوداء"}
+            {name: "جل واقي شمس وتجاعيد Kleraderm", price: 97, old: 150, img: "https://cdn.salla.sa/EZjdor/f4fa3c9d-b86b-491a-a2f1-15d13ed7ddf0-500x432.98969072165-EPZp5vjHOvl1h82ZoHstznTO0zddJNWHwtGIVngH.png", desc: "حماية فائقة من الشمس ومقاومة التجاعيد"},
+            {name: "غسول للوجه والنضارة Kleraderm", price: 100, old: 195, img: "https://cdn.salla.sa/EZjdor/0e49e5b6-0e5e-4088-8977-f3062d1f5383-500x432.98969072165-rb30ZPbIGKrOLeCibzgWeQda9dS0pPagJ0JKt1UU.png", desc: "تنظيف عميق يمنح البشرة نضارة فورية"},
+            {name: "كريم مرطب وحماية Kleraderm", price: 97, old: 154, img: "https://cdn.salla.sa/EZjdor/d50a4c04-5f9e-4cb3-9d22-fc8a18b30b13-500x432.98969072165-uSAVsBTtkq3TQeGbQZDcgbapGE2KwpRbLYKHrE2Z.png", desc: "ترطيب يومي وحماية للحاجز الجلدي"},
+            {name: "كريم مبيض لليد Kleraderm", price: 150, old: 250, img: "https://cdn.salla.sa/EZjdor/4d5dc83d-880a-45ff-948e-17faf4f266ad-500x432.98969072165-QbtgT689FaZd0DaBEglV7azox1FsxuOCC9LOa8EC.png", desc: "تفتيح وترطيب عميق لليدين"},
+            {name: "لوشن مبيض للجسم Kleraderm", price: 150, old: 285, img: "https://cdn.salla.sa/EZjdor/4f642cd3-7c10-4df2-8907-b033e76056c9-500x432.98969072165-TQFBrloeT8sdECBVUCVbGpv6TZlHayN4OvS80Dq8.png", desc: "توحيد لون الجسم وتفتيح التصبغات"},
+            {name: "سيروم للهالات Kleraderm", price: 150, old: 295, img: "https://cdn.salla.sa/EZjdor/0af58d78-ff62-4e14-b302-cb8c862c073b-500x432.98969072165-cf6P4J8vMZnrIVxeqjExTMRkrlUiMvwIsKGnzmMt.png", desc: "علاج مركز للهالات السوداء والانتفاخ"}
         ];
         
         const creamData = [
-            {name: "بنكوين (ماك) 40% + مقشر", price: 175, old: null, img: "https://cdn.salla.sa/EZjdor/0ffb1fe3-8da7-428d-ae2c-67c2adfc7d73-500x361.11111111111-bnFKQv0dL9IRChvIjXkpK8wK0jkixrH27R08t0e8.png", desc: "مع مقشر ريتينويك"},
-            {name: "بنكوين يونيكون 40% كوجيك", price: 185, old: null, img: "https://cdn.salla.sa/EZjdor/cf93c255-e5f0-438e-a0c6-84a7240a1ca0-500x356.9431500466-3H3uNs7KDsbbWJ9PblbM0GVYSjv4tetO7mVYKpgr.jpg", desc: "معزز بالكوجيك"},
-            {name: "بنكوين يونيكون 40% خام", price: 185, old: null, img: "https://cdn.salla.sa/EZjdor/c89915dc-b838-441a-90c6-80876ab0a848-500x356.9431500466-3yi5yP9yokWAM5i8OicSYANeFE1JeLZegQ3MR4u9.jpg", desc: "تركيبة خام نقية"},
-            {name: "بنكوين (ماك) 40% خام", price: 185, old: null, img: "https://cdn.salla.sa/EZjdor/49b998e5-81cd-41f1-8126-ef4155159b72-500x499.22480620155-Eb7QE25AU8wOXQBuUlt3UFSsCdhohHXAQHTwiXFB.png", desc: "بدون مقشر"},
-            {name: "بنكوين (ماك) 20%", price: 65, old: null, img: "https://cdn.salla.sa/EZjdor/4ce57bd0-a42b-4b94-94f7-7d40b0123af6-500x401.38888888889-lsfDHzNrfj2ZBsBvibLDWXm31FkR1y0krP8hcx11.jpg", desc: "تركيز مخفف"},
-            {name: "معزز للوجه 60g", price: 250, old: null, img: "https://cdn.salla.sa/EZjdor/df6e1202-b4cd-48ed-b44d-cdfc2f85c567-375x500-qlFv7bu39drZEdJDG1KZ6zJiT3NeVapRI5xB5Pgj.png", desc: "تهيئة بشرة الوجه"},
-            {name: "معزز للجسم 60g", price: 250, old: null, img: "https://cdn.salla.sa/EZjdor/cfbee0c0-4356-4a48-a4d3-655ecb833373-375x500-VpI5xoPA0rhgWC0ZN5DTMUG8WRG7bQaX4k2s7BpF.png", desc: "تهيئة بشرة الجسم"},
-            {name: "بنكوين يونيكون 80% كوجيك", price: 185, old: null, img: "https://cdn.salla.sa/EZjdor/4ba0884b-1019-414c-a331-495d502ad090-500x356.9431500466-qgcmZB1VyNaRKGFesQTJy1BbEtLDwHigcuLw0LLz.jpg", desc: "تركيز عالي"},
-            {name: "بنكوين يونيكون 80% خام", price: 185, old: null, img: "https://cdn.salla.sa/EZjdor/1683187a-b02b-4a40-9f24-4a122df74d9e-500x356.9431500466-d2g5c0vgWAA46K4p8Fr7618JQVntoF8TSMfzK6DF.jpg", desc: "تركيز عالي خام"},
-            {name: "جهاز ليزر تبريد", price: 1200, old: null, img: "https://cdn.salla.sa/EZjdor/20164d6a-6c16-452e-a957-bdd4beffb73c-500x431.94444444444-HKsgyEvwjSDfyrsiQNTrmyCfunyuYnbBYZZBUaUx.jpg", desc: "ومضات غير محدودة"},
-            {name: "بنكوين طبي 40% (60g)", price: 440, old: null, img: "https://cdn.salla.sa/EZjdor/0f26e2fa-6009-49a7-b51c-851b5873eb27-281.25x500-izLUfGP2senpHuLBUJhxFjWzHvNGrTDwx4MtuSve.jpg", desc: "تركيبة طبية خاصة"},
-            {name: "Sensequin Cream", price: 220, old: null, img: "https://cdn.salla.sa/EZjdor/c0e28e3a-9491-42c8-b8ca-610bbf9e84a8-500x402.4024024024-n7wukXrAAmUKjZd0v0vuCqVvk8V7oBWAHOQibG7x.jpg", desc: "تفتيح المناطق الحساسة"},
-            {name: "Rwaquin Body", price: 250, old: null, img: "https://cdn.salla.sa/EZjdor/0db4fd18-106f-4ab3-b022-932d14ad7130-500x402.4024024024-OcsyO7jjwH1TAGRANp981bKG6KjtukeDfzMcsyTu.jpg", desc: "علاج جلد الوزة"},
-            {name: "Knee whitening", price: 250, old: null, img: "https://cdn.salla.sa/EZjdor/c1fb14fd-bb2a-47a9-9036-1da9b21ca1fb-500x402.4024024024-HkcwElPFsw3obFSaWSMWcxEh6g7FeHqUAbAXzf0i.jpg", desc: "تفتيح الركب والاكواع"},
-            {name: "MBS Cream", price: 210, old: null, img: "https://cdn.salla.sa/EZjdor/535515a3-aa90-4e30-b8b0-9fffebd64b37-500x402.4024024024-EmGcxKDMYrf0izC2ykSsRQ4lmnaw5LOCDyZ3vkmV.jpg", desc: "للكلف العميق"},
-            {name: "جهاز إزالة الوشم", price: 2200, old: null, img: "https://cdn.salla.sa/EZjdor/1da8bc47-e884-49d2-a9c9-d3abcce1bec0-500x500-ByL7d480WFBZR5M804yVEWZ8a6QNbCz8dRQDO2lS.jpg", desc: "فعال للنمش والكلف"},
-            {name: "كريم مخدر 96%", price: 30, old: null, img: "https://cdn.salla.sa/EZjdor/764f85cf-2ea2-46c5-9fd6-4d7efd938821-500x475-nSON5EMUVVJ8jCVX9GL48nh5crkRvQ5Ei5embcoi.jpg", desc: "تخدير قوي"},
-            {name: "بودرة خام هندي (1kg)", price: 1379, old: null, img: "https://cdn.salla.sa/EZjdor/e55773e7-0d34-4758-8da3-5d12a17e1b2a-500x399.02080783354-V60M5divxq2jWb6SXpftt5IdM78L6k6SlaIQjOXi.jpg", desc: "أصلي للبهاق"},
-            {name: "بنكوين ديرماك 40%", price: 190, old: null, img: "https://cdn.salla.sa/EZjdor/d1fc97fe-9f8c-4fbc-9761-78a158d0d5a2-500x368.05555555556-QVWMtBtzBKI3QS0soAYgcGxq7qlaI03kgigQqkDD.jpg", desc: "توحيد لون"},
-            {name: "بنكوين أبو علم 60%", price: 185, old: null, img: "https://cdn.salla.sa/EZjdor/a47579b7-94d6-41c1-8008-1410701a6784-500x433.60433604336-ylMRkB8vhX81wgzSlOPPQz5Hf6ZA1th0RClRFCAW.jpg", desc: "تركيز متوسط"}
+            {name: "بنكوين (ماك) 40% + مقشر", price: 175, old: null, img: "https://cdn.salla.sa/EZjdor/0ffb1fe3-8da7-428d-ae2c-67c2adfc7d73-500x361.11111111111-bnFKQv0dL9IRChvIjXkpK8wK0jkixrH27R08t0e8.png", desc: "تركيبة قوية مع مقشر لنتائج أسرع"},
+            {name: "بنكوين يونيكون 40% كوجيك", price: 185, old: null, img: "https://cdn.salla.sa/EZjdor/cf93c255-e5f0-438e-a0c6-84a7240a1ca0-500x356.9431500466-3H3uNs7KDsbbWJ9PblbM0GVYSjv4tetO7mVYKpgr.jpg", desc: "توحيد لون مع كوجيك أسيد للتفتيح"},
+            {name: "بنكوين يونيكون 40% خام", price: 185, old: null, img: "https://cdn.salla.sa/EZjdor/c89915dc-b838-441a-90c6-80876ab0a848-500x356.9431500466-3yi5yP9yokWAM5i8OicSYANeFE1JeLZegQ3MR4u9.jpg", desc: "تركيبة خام نقية لتوحيد اللون"},
+            {name: "بنكوين (ماك) 40% خام", price: 185, old: null, img: "https://cdn.salla.sa/EZjdor/49b998e5-81cd-41f1-8126-ef4155159b72-500x499.22480620155-Eb7QE25AU8wOXQBuUlt3UFSsCdhohHXAQHTwiXFB.png", desc: "الحل الأمثل لتوحيد البهاق بدون إضافات"},
+            {name: "بنكوين (ماك) 20%", price: 65, old: null, img: "https://cdn.salla.sa/EZjdor/4ce57bd0-a42b-4b94-94f7-7d40b0123af6-500x401.38888888889-lsfDHzNrfj2ZBsBvibLDWXm31FkR1y0krP8hcx11.jpg", desc: "تركيز مخفف للمناطق الحساسة والبدايات"},
+            {name: "معزز للوجه 60g", price: 250, old: null, img: "https://cdn.salla.sa/EZjdor/df6e1202-b4cd-48ed-b44d-cdfc2f85c567-375x500-qlFv7bu39drZEdJDG1KZ6zJiT3NeVapRI5xB5Pgj.png", desc: "كريم تحضيري لتهيئة بشرة الوجه"},
+            {name: "معزز للجسم 60g", price: 250, old: null, img: "https://cdn.salla.sa/EZjdor/cfbee0c0-4356-4a48-a4d3-655ecb833373-375x500-VpI5xoPA0rhgWC0ZN5DTMUG8WRG7bQaX4k2s7BpF.png", desc: "كريم تحضيري لتهيئة بشرة الجسم"},
+            {name: "بنكوين يونيكون 80% كوجيك", price: 185, old: null, img: "https://cdn.salla.sa/EZjdor/4ba0884b-1019-414c-a331-495d502ad090-500x356.9431500466-qgcmZB1VyNaRKGFesQTJy1BbEtLDwHigcuLw0LLz.jpg", desc: "تركيز عالي جداً للحالات المستعصية"},
+            {name: "بنكوين يونيكون 80% خام", price: 185, old: null, img: "https://cdn.salla.sa/EZjdor/1683187a-b02b-4a40-9f24-4a122df74d9e-500x356.9431500466-d2g5c0vgWAA46K4p8Fr7618JQVntoF8TSMfzK6DF.jpg", desc: "تركيز عالي خام للحالات الصعبة"},
+            {name: "جهاز ليزر تبريد", price: 1200, old: null, img: "https://cdn.salla.sa/EZjdor/20164d6a-6c16-452e-a957-bdd4beffb73c-500x431.94444444444-HKsgyEvwjSDfyrsiQNTrmyCfunyuYnbBYZZBUaUx.jpg", desc: "إزالة شعر بالتبريد ومضات لا نهائية"},
+            {name: "بنكوين طبي 40% (60g)", price: 440, old: null, img: "https://cdn.salla.sa/EZjdor/0f26e2fa-6009-49a7-b51c-851b5873eb27-281.25x500-izLUfGP2senpHuLBUJhxFjWzHvNGrTDwx4MtuSve.jpg", desc: "تركيبة طبية خاصة بحجم 60 جرام"},
+            {name: "Sensequin Cream", price: 220, old: null, img: "https://cdn.salla.sa/EZjdor/c0e28e3a-9491-42c8-b8ca-610bbf9e84a8-500x402.4024024024-n7wukXrAAmUKjZd0v0vuCqVvk8V7oBWAHOQibG7x.jpg", desc: "تفتيح آمن للمناطق الحساسة"},
+            {name: "Rwaquin Body", price: 250, old: null, img: "https://cdn.salla.sa/EZjdor/0db4fd18-106f-4ab3-b022-932d14ad7130-500x402.4024024024-OcsyO7jjwH1TAGRANp981bKG6KjtukeDfzMcsyTu.jpg", desc: "علاج جلد الوزة والشعر تحت الجلد"},
+            {name: "Knee whitening", price: 250, old: null, img: "https://cdn.salla.sa/EZjdor/c1fb14fd-bb2a-47a9-9036-1da9b21ca1fb-500x402.4024024024-HkcwElPFsw3obFSaWSMWcxEh6g7FeHqUAbAXzf0i.jpg", desc: "تفتيح قوي للركب والأكواع"},
+            {name: "MBS Cream", price: 210, old: null, img: "https://cdn.salla.sa/EZjdor/535515a3-aa90-4e30-b8b0-9fffebd64b37-500x402.4024024024-EmGcxKDMYrf0izC2ykSsRQ4lmnaw5LOCDyZ3vkmV.jpg", desc: "علاج الكلف العميق والتصبغات العنيدة"},
+            {name: "جهاز إزالة الوشم", price: 2200, old: null, img: "https://cdn.salla.sa/EZjdor/1da8bc47-e884-49d2-a9c9-d3abcce1bec0-500x500-ByL7d480WFBZR5M804yVEWZ8a6QNbCz8dRQDO2lS.jpg", desc: "جهاز فعال لإزالة الوشم والنمش"},
+            {name: "كريم مخدر 96%", price: 30, old: null, img: "https://cdn.salla.sa/EZjdor/764f85cf-2ea2-46c5-9fd6-4d7efd938821-500x475-nSON5EMUVVJ8jCVX9GL48nh5crkRvQ5Ei5embcoi.jpg", desc: "مخدر موضعي قوي بتركيز 96%"},
+            {name: "بودرة خام هندي (1kg)", price: 1379, old: null, img: "https://cdn.salla.sa/EZjdor/e55773e7-0d34-4758-8da3-5d12a17e1b2a-500x399.02080783354-V60M5divxq2jWb6SXpftt5IdM78L6k6SlaIQjOXi.jpg", desc: "بودرة خام أصلية لتحضير التراكيب"},
+            {name: "بنكوين ديرماك 40%", price: 190, old: null, img: "https://cdn.salla.sa/EZjdor/d1fc97fe-9f8c-4fbc-9761-78a158d0d5a2-500x368.05555555556-QVWMtBtzBKI3QS0soAYgcGxq7qlaI03kgigQqkDD.jpg", desc: "توحيد لون البشرة ماركة ديرماك"},
+            {name: "بنكوين أبو علم 60%", price: 185, old: null, img: "https://cdn.salla.sa/EZjdor/a47579b7-94d6-41c1-8008-1410701a6784-500x433.60433604336-ylMRkB8vhX81wgzSlOPPQz5Hf6ZA1th0RClRFCAW.jpg", desc: "كريم بنكوين تركيز متوسط"}
         ];
 
         const peelData = [
-            {name: "محلول اللاكتيك 50ml", price: 155.9, old: null, img: "https://cdn.salla.sa/EZjdor/5cfdeaa3-baff-4030-bc07-4bb82369593e-342.35668789809x500-FlzMxwEh2dpifUNgtf1PK6B8EDjDHSxuezjtgdpW.jpg", desc: "تقشير لطيف"},
-            {name: "صابونة يونيكون", price: 82.9, old: null, img: "https://cdn.salla.sa/EZjdor/9254f1af-a1ab-404c-ae87-934f6e891fa4-500x459.28338762215-ZHU9ALiDANnStEjIqz6xHIVf78fuyaMf2xP7OXrz.jpg", desc: "طبية مساعدة"},
-            {name: "محلول يونيكون عميق", price: 155, old: null, img: "https://cdn.salla.sa/EZjdor/79f611eb-bb65-4017-a931-fd0cdf2666ad-414.54352441614x500-rKiZeE9s1fFcGUMq5Tn4KyRTPo7IXClMMAdAlqbe.jpg", desc: "تقشير قوي"},
-            {name: "مقشر ارتن أي", price: 35.9, old: null, img: "https://cdn.salla.sa/EZjdor/2192a1be-bdf2-4225-9ae0-520332f084e6-500x428.1581485053-soTYW9TcS2yXzO2uNwZiNHmokdTw5af4GzhvlFqi.jpg", desc: "لحب الشباب"},
-            {name: "جل فازلين نقي 1kg", price: 75, old: null, img: "https://cdn.salla.sa/EZjdor/7816b78a-d5c2-4347-8346-2bc1e6de130d-359.64035964036x500-5jQapBuWn5hau7NgtnwQjbnmoXQrJlgM2yHeT1v3.png", desc: "حماية قصوى"},
-            {name: "محلول TCA 50%", price: 155.9, old: null, img: "https://cdn.salla.sa/EZjdor/a8a86b11-33bc-4490-bcc8-020ba0fe28c4-500x487.11063372718-CJZ4P7e6AmAfWZaEys2dpmPo5oWEXQlsv7ZwmrPY.jpg", desc: "تقشير كيميائي"},
-            {name: "مقشر ريتينوك", price: 140, old: null, img: "https://cdn.salla.sa/EZjdor/0355154d-f720-4338-a802-2f6c4072e97c-500x489.93644067797-RKm8ti6ZCTfz2SDRKD2u65xP3OW8NjZVCfGltypi.jpg", desc: "عالي الفعالية"}
+            {name: "محلول اللاكتيك 50ml", price: 155.9, old: null, img: "https://cdn.salla.sa/EZjdor/5cfdeaa3-baff-4030-bc07-4bb82369593e-342.35668789809x500-FlzMxwEh2dpifUNgtf1PK6B8EDjDHSxuezjtgdpW.jpg", desc: "تقشير سطحي لطيف وترطيب"},
+            {name: "صابونة يونيكون", price: 82.9, old: null, img: "https://cdn.salla.sa/EZjdor/9254f1af-a1ab-404c-ae87-934f6e891fa4-500x459.28338762215-ZHU9ALiDANnStEjIqz6xHIVf78fuyaMf2xP7OXrz.jpg", desc: "صابونة طبية مساعدة للعلاج"},
+            {name: "محلول يونيكون عميق", price: 155, old: null, img: "https://cdn.salla.sa/EZjdor/79f611eb-bb65-4017-a931-fd0cdf2666ad-414.54352441614x500-rKiZeE9s1fFcGUMq5Tn4KyRTPo7IXClMMAdAlqbe.jpg", desc: "محلول تقشير عميق للبشرة"},
+            {name: "مقشر ارتن أي", price: 35.9, old: null, img: "https://cdn.salla.sa/EZjdor/2192a1be-bdf2-4225-9ae0-520332f084e6-500x428.1581485053-soTYW9TcS2yXzO2uNwZiNHmokdTw5af4GzhvlFqi.jpg", desc: "علاج فعال لحب الشباب وآثاره"},
+            {name: "جل فازلين نقي 1kg", price: 75, old: null, img: "https://cdn.salla.sa/EZjdor/7816b78a-d5c2-4347-8346-2bc1e6de130d-359.64035964036x500-5jQapBuWn5hau7NgtnwQjbnmoXQrJlgM2yHeT1v3.png", desc: "حماية قصوى من الجفاف والتشقق"},
+            {name: "محلول TCA 50%", price: 155.9, old: null, img: "https://cdn.salla.sa/EZjdor/a8a86b11-33bc-4490-bcc8-020ba0fe28c4-500x487.11063372718-CJZ4P7e6AmAfWZaEys2dpmPo5oWEXQlsv7ZwmrPY.jpg", desc: "تقشير كيميائي متوسط إلى عميق"},
+            {name: "مقشر ريتينوك", price: 140, old: null, img: "https://cdn.salla.sa/EZjdor/0355154d-f720-4338-a802-2f6c4072e97c-500x489.93644067797-RKm8ti6ZCTfz2SDRKD2u65xP3OW8NjZVCfGltypi.jpg", desc: "تجديد الخلايا وتفتيح قوي"}
         ];
 
         function createCard(p, id) {
