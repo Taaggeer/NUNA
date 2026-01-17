@@ -20,14 +20,14 @@
     <style>
         :root {
             /* Palette Luxury */
-            --primary: #be185d; /* Pink Rose Strong */
+            --primary: #be185d; 
             --primary-soft: #fce7f3;
             --accent: #831843;
             --dark: #1e293b;
             --gray: #64748b;
             --light: #f8fafc;
             --white: #ffffff;
-            --whatsapp: #10b981;
+            --whatsapp: #25D366;
             
             /* Gradients */
             --gradient-hero: linear-gradient(135deg, #fdf2f8 0%, #fff1f2 100%);
@@ -47,7 +47,7 @@
             --accent: #fbcfe8;
             --dark: #f1f5f9;
             --gray: #94a3b8;
-            --light: #0f172a; /* Deep Navy Background */
+            --light: #0f172a; 
             --white: #1e293b;
             --gradient-hero: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
             --glass: rgba(15, 23, 42, 0.85);
@@ -185,23 +185,30 @@
 
         .badge-offer {
             position: absolute; top: 10px; left: 10px; background: #ef4444; color: white;
-            font-size: 0.75rem; font-weight: 800; padding: 5px 10px; border-radius: 8px;
+            font-size: 0.75rem; font-weight: 800; padding: 5px 10px; border-radius: 8px; z-index: 5;
         }
 
         .card-details { padding: 15px 5px 5px; flex-grow: 1; display: flex; flex-direction: column; }
         .p-name { font-size: 1.05rem; font-weight: 700; color: var(--dark); margin-bottom: 8px; line-height: 1.4; }
         .p-desc { font-size: 0.85rem; color: var(--gray); margin-bottom: 15px; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
         
-        .price-row { margin-top: auto; display: flex; justify-content: space-between; align-items: center; }
+        .price-row { 
+            margin-top: auto; display: flex; align-items: center; gap: 10px; margin-bottom: 15px;
+        }
         .price { font-size: 1.2rem; font-weight: 900; color: var(--primary); }
         .old-p { font-size: 0.9rem; text-decoration: line-through; color: var(--gray); opacity: 0.6; }
 
-        .btn-add {
-            width: 45px; height: 45px; border-radius: 50%; border: none;
-            background: var(--dark); color: #fff; font-size: 1.2rem; cursor: pointer;
-            display: flex; align-items: center; justify-content: center; transition: 0.3s;
+        /* --- زر الواتساب الجديد --- */
+        .btn-wa-order {
+            width: 100%; padding: 12px; border: none; border-radius: 15px;
+            background: var(--whatsapp); color: white; font-weight: 700; font-size: 1rem;
+            cursor: pointer; display: flex; align-items: center; justify-content: center; gap: 8px;
+            transition: all 0.3s ease; box-shadow: 0 4px 10px rgba(37, 211, 102, 0.2);
         }
-        .btn-add:hover { background: var(--whatsapp); transform: rotate(90deg); }
+        .btn-wa-order:hover {
+            background: #1ebc57; transform: translateY(-2px);
+            box-shadow: 0 8px 20px rgba(37, 211, 102, 0.3);
+        }
 
         /* --- Premium Order Form --- */
         .form-section { 
@@ -275,7 +282,7 @@
             .p-name { font-size: 0.85rem; height: 36px; overflow: hidden; margin-bottom: 5px; }
             .p-desc { display: none; }
             .price { font-size: 1rem; }
-            .btn-add { width: 35px; height: 35px; font-size: 1rem; }
+            .btn-wa-order { padding: 8px; font-size: 0.85rem; }
             
             .form-container { padding: 30px 20px; border-radius: 30px; }
         }
@@ -371,7 +378,7 @@
                 <div class="trust-row">
                     <span class="trust-item"><i class="fa-solid fa-check-circle"></i> أصلي 100%</span>
                     <span class="trust-item"><i class="fa-solid fa-truck-fast"></i> شحن سريع</span>
-                    <span class="trust-item"><i class="fa-solid fa-lock"></i> سرية تامة</span>
+                    <span class="trust-item"><i class="fa-solid fa-lock"></i> تاريخ جديد</span>
                 </div>
             </div>
 
@@ -454,7 +461,7 @@
         ];
         const marquee = document.getElementById('marquee');
         const featContent = feats.map(t => `<div class="feature-pill"><i class="fa-solid fa-star"></i> ${t}</div>`).join('');
-        marquee.innerHTML = featContent + featContent + featContent; // Triple for smooth loop
+        marquee.innerHTML = featContent + featContent + featContent;
 
         // --- Data & Rendering ---
         const italianData = [
@@ -475,6 +482,7 @@
             {name: "معزز للوجه 60g", price: 250, old: null, img: "https://cdn.salla.sa/EZjdor/df6e1202-b4cd-48ed-b44d-cdfc2f85c567-375x500-qlFv7bu39drZEdJDG1KZ6zJiT3NeVapRI5xB5Pgj.png", desc: "تهيئة بشرة الوجه"},
             {name: "معزز للجسم 60g", price: 250, old: null, img: "https://cdn.salla.sa/EZjdor/cfbee0c0-4356-4a48-a4d3-655ecb833373-375x500-VpI5xoPA0rhgWC0ZN5DTMUG8WRG7bQaX4k2s7BpF.png", desc: "تهيئة بشرة الجسم"},
             {name: "بنكوين يونيكون 80% كوجيك", price: 185, old: null, img: "https://cdn.salla.sa/EZjdor/4ba0884b-1019-414c-a331-495d502ad090-500x356.9431500466-qgcmZB1VyNaRKGFesQTJy1BbEtLDwHigcuLw0LLz.jpg", desc: "تركيز عالي"},
+            {name: "بنكوين يونيكون 80% خام", price: 185, old: null, img: "https://cdn.salla.sa/EZjdor/1683187a-b02b-4a40-9f24-4a122df74d9e-500x356.9431500466-d2g5c0vgWAA46K4p8Fr7618JQVntoF8TSMfzK6DF.jpg", desc: "تركيز عالي خام"},
             {name: "جهاز ليزر تبريد", price: 1200, old: null, img: "https://cdn.salla.sa/EZjdor/20164d6a-6c16-452e-a957-bdd4beffb73c-500x431.94444444444-HKsgyEvwjSDfyrsiQNTrmyCfunyuYnbBYZZBUaUx.jpg", desc: "ومضات غير محدودة"},
             {name: "بنكوين طبي 40% (60g)", price: 440, old: null, img: "https://cdn.salla.sa/EZjdor/0f26e2fa-6009-49a7-b51c-851b5873eb27-281.25x500-izLUfGP2senpHuLBUJhxFjWzHvNGrTDwx4MtuSve.jpg", desc: "تركيبة طبية خاصة"},
             {name: "Sensequin Cream", price: 220, old: null, img: "https://cdn.salla.sa/EZjdor/c0e28e3a-9491-42c8-b8ca-610bbf9e84a8-500x402.4024024024-n7wukXrAAmUKjZd0v0vuCqVvk8V7oBWAHOQibG7x.jpg", desc: "تفتيح المناطق الحساسة"},
@@ -514,12 +522,12 @@
                         <div class="p-name">${p.name}</div>
                         <div class="p-desc">${p.desc}</div>
                         <div class="price-row">
-                            <div>
-                                <span class="price">${p.price} ر.س</span>
-                                ${oldPrice}
-                            </div>
-                            <button class="btn-add" onclick="window.open('${wa}', '_blank')"><i class="fa-solid fa-plus"></i></button>
+                            <span class="price">${p.price} ر.س</span>
+                            ${oldPrice}
                         </div>
+                        <button class="btn-wa-order" onclick="window.open('${wa}', '_blank')">
+                            <i class="fa-brands fa-whatsapp"></i> اطلب الآن
+                        </button>
                     </div>
                 </div>
             `;
