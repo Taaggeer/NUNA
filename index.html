@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="متجر نونا بيوتي (Nona Beauty) - الوجهة الأولى في السعودية والخليج لمنتجات البهاق، البنكوين الهندي والايراني، ومنتجات العناية الإيطالية Kleraderm.">
+    <meta name="description" content="متجر نونا بيوتي (Nona Beauty) - الوجهة الأولى في السعودية والخليج لمنتجات البهاق، البنكوين الهندي والايراني، ومنتجات العناية الإيطالية.">
     <title>متجر نونا بيوتي | Nona Beauty</title>
     
-    <!-- أيقونة المتصفح (Favicon) - زهرة 🌸 -->
+    <!-- أيقونة المتصفح (Favicon) 🌸 -->
     <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌸</text></svg>">
 
     <!-- خطوط جوجل العربية -->
@@ -52,6 +52,7 @@
             background-color: var(--bg-color);
             color: var(--text-color);
             transition: background-color 0.3s, color 0.3s;
+            overflow-x: hidden; /* لمنع ظهور شريط تمرير أفقي */
         }
 
         /* --- Header & Navigation --- */
@@ -70,174 +71,148 @@
             margin: 0 auto;
         }
 
-        .header-content {
-            display: flex;
-            flex-direction: column;
-            gap: 10px;
-        }
+        .header-content { display: flex; flex-direction: column; gap: 10px; }
 
-        .navbar-top {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
+        .navbar-top { display: flex; justify-content: space-between; align-items: center; }
 
         .logo {
-            font-size: 1.5rem;
-            font-weight: 900;
-            color: var(--primary-color);
-            text-decoration: none;
-            display: flex;
-            align-items: center;
-            gap: 8px;
+            font-size: 1.5rem; font-weight: 900; color: var(--primary-color);
+            text-decoration: none; display: flex; align-items: center; gap: 8px;
         }
 
         .theme-toggle {
-            cursor: pointer;
-            font-size: 1.2rem;
-            background: none;
-            border: none;
-            color: var(--text-color);
+            cursor: pointer; font-size: 1.2rem; background: none; border: none; color: var(--text-color);
         }
 
-        /* القائمة الجديدة */
+        /* القائمة */
         .nav-menu {
-            display: flex;
-            gap: 15px;
-            overflow-x: auto; /* للسماح بالتمرير في الجوال */
-            white-space: nowrap;
-            padding-bottom: 5px;
-            border-top: 1px solid var(--accent-color);
-            padding-top: 10px;
+            display: flex; gap: 15px; overflow-x: auto; white-space: nowrap;
+            padding-bottom: 5px; border-top: 1px solid var(--accent-color); padding-top: 10px;
         }
-
         .nav-menu::-webkit-scrollbar { height: 4px; }
         .nav-menu::-webkit-scrollbar-thumb { background: var(--primary-color); border-radius: 10px; }
 
         .nav-link {
-            text-decoration: none;
-            color: var(--text-color);
-            font-weight: bold;
-            font-size: 0.95rem;
-            padding: 5px 10px;
-            border-radius: 5px;
-            transition: all 0.3s;
-            flex-shrink: 0;
+            text-decoration: none; color: var(--text-color); font-weight: bold;
+            font-size: 0.95rem; padding: 5px 10px; border-radius: 5px; transition: all 0.3s; flex-shrink: 0;
         }
-
-        .nav-link:hover, .nav-link.active {
-            background-color: var(--primary-color);
-            color: #fff;
-        }
+        .nav-link:hover, .nav-link.active { background-color: var(--primary-color); color: #fff; }
 
         /* --- Hero Section --- */
         .hero {
-            position: relative;
-            height: 400px; /* تقليل الارتفاع قليلاً */
-            overflow: hidden;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-            color: #fff;
+            position: relative; height: 400px; overflow: hidden;
+            display: flex; align-items: center; justify-content: center; text-align: center; color: #fff;
         }
-
         .hero-slide {
             position: absolute; top: 0; left: 0; width: 100%; height: 100%;
-            background-size: cover; background-position: center;
-            opacity: 0; transition: opacity 1s ease-in-out; z-index: 1;
+            background-size: cover; background-position: center; opacity: 0; transition: opacity 1s ease-in-out; z-index: 1;
         }
-
         .hero-slide.active { opacity: 1; }
-
-        .hero-overlay {
-            position: absolute; top: 0; left: 0; width: 100%; height: 100%;
-            background: rgba(0, 0, 0, 0.5); z-index: 2;
-        }
-
-        .hero-content {
-            position: relative; z-index: 3; max-width: 800px; padding: 20px;
-            animation: fadeInUp 1s ease-out;
-        }
-
+        .hero-overlay { position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.5); z-index: 2; }
+        .hero-content { position: relative; z-index: 3; max-width: 800px; padding: 20px; animation: fadeInUp 1s ease-out; }
         .hero h1 { font-size: 2.2rem; margin-bottom: 10px; text-shadow: 2px 2px 4px rgba(0,0,0,0.7); }
         .btn-main {
-            background-color: var(--primary-color); color: #fff; padding: 10px 25px;
-            border: none; border-radius: 50px; font-size: 1rem; cursor: pointer;
-            text-decoration: none; transition: transform 0.3s; display: inline-block; margin-top: 15px;
+            background-color: var(--primary-color); color: #fff; padding: 10px 25px; border: none; border-radius: 50px;
+            font-size: 1rem; cursor: pointer; text-decoration: none; transition: transform 0.3s; display: inline-block; margin-top: 15px;
         }
 
-        /* --- Features --- */
-        .features-section { padding: 40px 0; background-color: var(--accent-color); }
+        /* --- Features Slider (تعديل السلايدر للمميزات) --- */
+        .features-section { padding: 40px 0; background-color: var(--accent-color); overflow: hidden; }
         .section-title { text-align: center; margin-bottom: 30px; color: var(--primary-color); font-size: 1.8rem; }
-        .features-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 15px; }
-        .feature-card { background: var(--card-bg); padding: 15px; border-radius: 10px; box-shadow: var(--shadow); text-align: center; }
+        
+        .features-wrapper {
+            width: 100%;
+            overflow: hidden;
+            position: relative;
+        }
+        
+        .features-track {
+            display: flex;
+            width: max-content; /* عرض يكفي العناصر */
+            gap: 20px;
+            animation: scroll 25s linear infinite; /* حركة مستمرة */
+        }
+
+        .feature-card {
+            background: var(--card-bg); padding: 15px; border-radius: 10px;
+            box-shadow: var(--shadow); text-align: center;
+            min-width: 280px; /* عرض ثابت للكارت لضمان الشكل */
+            flex-shrink: 0; /* منع الانكماش */
+        }
+        
         .feature-icon { font-size: 2rem; color: var(--primary-color); margin-bottom: 10px; }
+
+        /* الأنيميشن للشريط المتحرك */
+        @keyframes scroll {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(50%); } /* لأننا نكرر العناصر، نتحرك نصف المسافة */
+        }
 
         /* --- Products Section --- */
         .products-section { padding: 40px 0; }
         .products-category-title {
             background: var(--primary-color); color: #fff; padding: 12px;
-            border-radius: 8px; margin: 40px 0 20px 0; text-align: center; font-size: 1.3rem;
-            scroll-margin-top: 140px; /* لضبط التمرير مع القائمة */
+            border-radius: 8px; margin: 40px 0 20px 0; text-align: center; font-size: 1.3rem; scroll-margin-top: 140px;
         }
-
-        .products-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); /* الوضع الافتراضي للكمبيوتر */
-            gap: 20px;
-        }
-
+        .products-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 20px; }
         .product-card {
             background: var(--card-bg); border-radius: 12px; overflow: hidden;
             box-shadow: var(--shadow); display: flex; flex-direction: column;
             border: 1px solid var(--accent-color); transition: transform 0.2s;
         }
-
         .product-img {
-            height: 180px; background-color: #f1f1f1; display: flex; align-items: center;
-            justify-content: center; color: #aaa; font-size: 2.5rem; position: relative;
+            height: 180px; background-color: #f1f1f1; display: flex; align-items: center; justify-content: center;
+            color: #aaa; font-size: 2.5rem; position: relative;
         }
-
         .product-info { padding: 12px; flex-grow: 1; display: flex; flex-direction: column; }
         .product-title { font-weight: bold; margin-bottom: 5px; font-size: 1rem; line-height: 1.3; }
         .product-desc { font-size: 0.85rem; color: #777; margin-bottom: 8px; flex-grow: 1; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
-        
         .price-box { margin-top: auto; display: flex; align-items: center; justify-content: space-between; margin-bottom: 8px; flex-wrap: wrap; }
         .current-price { color: var(--price-color); font-weight: 800; font-size: 1.1rem; }
         .old-price { text-decoration: line-through; color: #999; font-size: 0.85rem; }
-
         .btn-cart {
-            width: 100%; padding: 8px; background: var(--whatsapp-color); color: white;
-            border: none; border-radius: 6px; cursor: pointer; font-weight: bold;
-            display: flex; align-items: center; justify-content: center; gap: 6px; font-size: 0.9rem;
+            width: 100%; padding: 8px; background: var(--whatsapp-color); color: white; border: none; border-radius: 6px;
+            cursor: pointer; font-weight: bold; display: flex; align-items: center; justify-content: center; gap: 6px; font-size: 0.9rem;
         }
 
-        /* --- Mobile Customization (2 Columns) --- */
-        @media (max-width: 480px) {
-            .products-grid {
-                grid-template-columns: repeat(2, 1fr); /* إجبار عمودين */
-                gap: 10px; /* تقليل المسافة */
-            }
-            .product-card { border-radius: 8px; }
-            .product-img { height: 120px; font-size: 1.8rem; }
-            .product-info { padding: 8px; }
-            .product-title { font-size: 0.85rem; height: 35px; overflow: hidden; margin-bottom: 3px;}
-            .product-desc { display: none; /* إخفاء الوصف الطويل في الجوال لتوفير المساحة */ }
-            .price-box { flex-direction: column; align-items: flex-start; gap: 2px; margin-bottom: 5px; }
-            .current-price { font-size: 0.95rem; }
-            .old-price { font-size: 0.75rem; }
-            .btn-cart { padding: 6px; font-size: 0.8rem; }
-            
-            /* تحسين الهيدر في الجوال */
-            .logo { font-size: 1.3rem; }
-            .hero { height: 300px; }
-            .hero h1 { font-size: 1.6rem; }
-        }
-
-        /* --- Order Form & Footer --- */
+        /* --- Order Form & Pre-Banner --- */
         .order-form-section { padding: 50px 0; background-color: var(--accent-color); }
-        .form-container { max-width: 600px; margin: 0 auto; background: var(--card-bg); padding: 25px; border-radius: 12px; box-shadow: var(--shadow); }
+        
+        /* تصميم بانر قبل الاستمارة */
+        .pre-form-banner {
+            max-width: 650px;
+            margin: 0 auto 25px auto;
+            text-align: center;
+            background: var(--card-bg);
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: var(--shadow);
+            border-top: 4px solid var(--primary-color);
+        }
+        .pre-form-banner h3 { color: var(--primary-color); margin-bottom: 10px; font-size: 1.4rem; }
+        .pre-form-banner p { color: var(--text-color); line-height: 1.6; margin-bottom: 15px; font-size: 1rem; }
+        
+        .trust-badges {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin-top: 15px;
+            border-top: 1px solid var(--accent-color);
+            padding-top: 15px;
+        }
+        .badge-item {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-weight: bold;
+            font-size: 0.9rem;
+            color: #555;
+        }
+        body.dark-mode .badge-item { color: #ddd; }
+        .badge-icon { font-size: 1.4rem; }
+
+        .form-container { max-width: 650px; margin: 0 auto; background: var(--card-bg); padding: 25px; border-radius: 12px; box-shadow: var(--shadow); }
         .form-group { margin-bottom: 15px; }
         .form-group label { display: block; margin-bottom: 5px; font-weight: bold; font-size: 0.9rem; }
         .form-group input, .form-group textarea { width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 6px; background-color: var(--bg-color); color: var(--text-color); }
@@ -250,15 +225,34 @@
         .btn-call-float { background-color: var(--primary-color); }
 
         @keyframes fadeInUp { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
+
+        /* Responsive */
+        @media (max-width: 480px) {
+            .products-grid { grid-template-columns: repeat(2, 1fr); gap: 10px; }
+            .product-card { border-radius: 8px; }
+            .product-img { height: 120px; font-size: 1.8rem; }
+            .product-info { padding: 8px; }
+            .product-title { font-size: 0.85rem; height: 35px; overflow: hidden; margin-bottom: 3px;}
+            .product-desc { display: none; }
+            .price-box { flex-direction: column; align-items: flex-start; gap: 2px; margin-bottom: 5px; }
+            .current-price { font-size: 0.95rem; }
+            .old-price { font-size: 0.75rem; }
+            .btn-cart { padding: 6px; font-size: 0.8rem; }
+            .logo { font-size: 1.3rem; }
+            .hero { height: 300px; }
+            .hero h1 { font-size: 1.6rem; }
+            
+            /* تعديل البانر للجوال */
+            .trust-badges { flex-direction: column; align-items: center; gap: 10px; }
+        }
     </style>
 </head>
 <body>
 
-    <!-- الهيدر مع القائمة الجديدة -->
+    <!-- الهيدر -->
     <header>
         <div class="container">
             <div class="header-content">
-                <!-- الصف العلوي: الشعار والوضع الليلي -->
                 <div class="navbar-top">
                     <a href="#" class="logo">
                         <i class="fa-solid fa-spa"></i> Nona Beauty
@@ -267,8 +261,6 @@
                         <i class="fa-solid fa-moon"></i>
                     </button>
                 </div>
-                
-                <!-- صف القائمة (الأقسام) -->
                 <nav class="nav-menu">
                     <a href="#italian-products" class="nav-link">المنتجات الإيطالية</a>
                     <a href="#cream-products" class="nav-link">الكريمات والبهاق</a>
@@ -284,9 +276,7 @@
         <div class="hero-slide active" style="background-image: url('https://images.unsplash.com/photo-1616394584738-fc6e612e71b9?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80');"></div>
         <div class="hero-slide" style="background-image: url('https://images.unsplash.com/photo-1571781535242-b248471b8d63?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80');"></div>
         <div class="hero-slide" style="background-image: url('https://images.unsplash.com/photo-1556228720-1910d5755104?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80');"></div>
-        
         <div class="hero-overlay"></div>
-        
         <div class="hero-content">
             <h1>متجر نونا بيوتي</h1>
             <p>الوجهة الأولى لحلول البهاق والعناية بالبشرة</p>
@@ -294,18 +284,21 @@
         </div>
     </section>
 
-    <!-- المميزات -->
+    <!-- سلايدر المميزات (التعديل الجديد) -->
     <section class="features-section">
         <div class="container">
             <h2 class="section-title">لماذا نونا بيوتي؟</h2>
-            <div class="features-grid" id="features-container"></div>
+            <div class="features-wrapper">
+                <div class="features-track" id="features-track">
+                    <!-- سيتم توليد العناصر بالجافاسكريبت وتكرارها للحركة -->
+                </div>
+            </div>
         </div>
     </section>
 
     <!-- المنتجات -->
     <section class="products-section" id="products">
         <div class="container">
-            
             <div id="italian-products-title" class="products-category-title">المنتجات الإيطالية (Kleraderm)</div>
             <div class="products-grid" id="italian-products"></div>
 
@@ -314,14 +307,29 @@
 
             <div id="peel-products-title" class="products-category-title">قسم المقشرات الطبية</div>
             <div class="products-grid" id="peel-products"></div>
-
         </div>
     </section>
 
-    <!-- استمارة الطلب -->
+    <!-- بانر المعلومات + استمارة الطلب (التعديل الجديد) -->
     <section class="order-form-section" id="order-form">
         <div class="container">
-            <h2 class="section-title">إتمام الطلب</h2>
+            
+            <!-- بانر قبل الاستمارة -->
+            <div class="pre-form-banner">
+                <h3>استمارة الطلب المباشر</h3>
+                <p>سيقوم فريقنا بالتواصل معك خلال دقائق لتأكيد طلبك وتنسيق التوصيل لكافة مناطق المملكة ودول الخليج.</p>
+                <div class="trust-badges">
+                    <div class="badge-item">
+                        <span class="badge-icon">🚚</span>
+                        <span>توصيل سريع للسعودية والخليج</span>
+                    </div>
+                    <div class="badge-item">
+                        <span class="badge-icon">🔒</span>
+                        <span>خصوصية وسرية تامة لطلبك</span>
+                    </div>
+                </div>
+            </div>
+
             <div class="form-container">
                 <form id="whatsappForm">
                     <div class="form-group">
@@ -372,7 +380,7 @@
             icon.classList.toggle('fa-sun');
         });
 
-        // السلايدر
+        // سلايدر الصور (الهيرو)
         let currentSlide = 0;
         const slides = document.querySelectorAll('.hero-slide');
         setInterval(() => {
@@ -381,25 +389,36 @@
             slides[currentSlide].classList.add('active');
         }, 4000);
 
-        // المميزات
-        const features = [
+        // --- سلايدر المميزات (Javascript Logic) ---
+        const featuresData = [
             { icon: 'fa-globe', title: 'تعدد المصادر', text: 'بنكوين هندي وإيراني.' },
             { icon: 'fa-certificate', title: 'جودة مضمونة', text: 'منتجات أصلية 100%.' },
             { icon: 'fa-hand-holding-medical', title: 'حلول للبهاق', text: 'عناية متخصصة.' },
-            { icon: 'fa-user-secret', title: 'خصوصية تامة', text: 'سرية في الطلب والتوصيل.' }
+            { icon: 'fa-vial', title: 'تركيزات عالية', text: 'حلول فعالة ومدروسة.' },
+            { icon: 'fa-box-open', title: 'تغليف آمن', text: 'حماية من الحرارة والضوء.' },
+            { icon: 'fa-user-secret', title: 'خصوصية تامة', text: 'سرية في الطلب والتوصيل.' },
+            { icon: 'fa-rotate', title: 'تحديث مستمر', text: 'تواريخ انتاج جديدة.' }
         ];
-        const fContainer = document.getElementById('features-container');
-        features.forEach(f => {
-            fContainer.innerHTML += `
+
+        const track = document.getElementById('features-track');
+        
+        // دالة لإنشاء كارت الميزة
+        function createFeatureCard(f) {
+            return `
                 <div class="feature-card">
                     <div class="feature-icon"><i class="fa-solid ${f.icon}"></i></div>
                     <h3>${f.title}</h3>
                     <p style="font-size:0.9rem">${f.text}</p>
                 </div>
             `;
-        });
+        }
 
-        // دالة المنتجات
+        // نكرر البيانات مرتين لضمان استمرار الشريط المتحرك
+        const allFeatures = [...featuresData, ...featuresData]; 
+        track.innerHTML = allFeatures.map(f => createFeatureCard(f)).join('');
+
+
+        // --- المنتجات ---
         function createProductCard(name, price, oldPrice, desc, containerId) {
             const container = document.getElementById(containerId);
             const discountHTML = oldPrice ? `<span class="old-price">${oldPrice}</span>` : '';
@@ -425,7 +444,7 @@
             container.innerHTML += html;
         }
 
-        // البيانات (Data)
+        // البيانات
         const italianData = [
             {name: "جل واقي شمس وتجاعيد Kleraderm", price: 97, old: 150, desc: "حماية فائقة ومضاد تجاعيد."},
             {name: "غسول للوجه والنضارة Kleraderm", price: 100, old: 195, desc: "ينظف بعمق ويمنح نضارة."},
