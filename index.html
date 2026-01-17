@@ -3,287 +3,345 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- تحسينات السيو SEO -->
-    <meta name="description" content="متجر نونا بيوتي (Nona Beauty) - الوجهة الأولى في السعودية والخليج لعلاج البهاق، كريمات البنكوين الهندي والايراني، ومنتجات العناية الإيطالية. منتجات أصلية 100%.">
-    <meta name="keywords" content="نونا بيوتي, بنكوين, علاج البهاق, توحيد لون البشرة, السعودية, الرياض, جدة, مقشرات, تفتيح, Kleraderm">
-    <meta name="author" content="Nona Beauty">
-    <meta property="og:title" content="متجر نونا بيوتي | Nona Beauty">
-    <meta property="og:description" content="الحل الأمثل لتوحيد لون البشرة ومنتجات العناية العالمية.">
-    <meta property="og:image" content="https://via.placeholder.com/1200x630"> 
-    <title>متجر نونا بيوتي | Nona Beauty - منتجات البهاق والعناية</title>
+    <meta name="description" content="متجر نونا بيوتي (Nona Beauty) - الوجهة الأولى في السعودية والخليج لمنتجات البهاق، البنكوين الهندي والايراني، ومنتجات العناية الإيطالية Kleraderm.">
+    <title>متجر نونا بيوتي | Nona Beauty</title>
+    
+    <!-- أيقونة المتصفح (Favicon) - زهرة 🌸 -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌸</text></svg>">
 
     <!-- خطوط جوجل العربية -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;700;900&display=swap" rel="stylesheet">
     
-    <!-- مكتبة الأيقونات -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- مكتبة أيقونات FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 
     <style>
         :root {
-            --primary: #d63384; /* وردي أساسي */
-            --primary-dark: #a61e61;
-            --secondary: #fce4ec;
-            --text-main: #2d2d2d;
-            --text-light: #666;
-            --bg-body: #ffffff;
-            --bg-card: #ffffff;
-            --border: #eeeeee;
-            --shadow: 0 10px 30px rgba(0,0,0,0.08);
-            --whatsapp: #25D366;
-            --transition: all 0.3s ease;
+            --primary-color: #d63384; 
+            --secondary-color: #f8f9fa;
+            --text-color: #333;
+            --bg-color: #ffffff;
+            --card-bg: #fff;
+            --accent-color: #e9ecef;
+            --whatsapp-color: #25D366;
+            --price-color: #b1276a;
+            --shadow: 0 4px 6px rgba(0,0,0,0.1);
         }
 
         body.dark-mode {
-            --primary: #ff69b4;
-            --primary-dark: #ff85c0;
-            --secondary: #2d1b24;
-            --text-main: #f0f0f0;
-            --text-light: #bbbbbb;
-            --bg-body: #121212;
-            --bg-card: #1e1e1e;
-            --border: #333333;
-            --shadow: 0 10px 30px rgba(0,0,0,0.5);
+            --primary-color: #ff69b4;
+            --secondary-color: #1a1a1a;
+            --text-color: #f0f0f0;
+            --bg-color: #121212;
+            --card-bg: #1e1e1e;
+            --accent-color: #2d2d2d;
+            --shadow: 0 4px 6px rgba(255,255,255,0.1);
         }
 
-        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Tajawal', sans-serif; }
-        
-        body { background-color: var(--bg-body); color: var(--text-main); transition: var(--transition); overflow-x: hidden; }
-        a { text-decoration: none; }
-        ul { list-style: none; }
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Tajawal', sans-serif;
+            scroll-behavior: smooth;
+        }
 
-        /* --- Header --- */
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        /* --- Header & Navigation --- */
         header {
-            background: var(--bg-card);
-            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            background-color: var(--card-bg);
+            box-shadow: var(--shadow);
             position: sticky;
             top: 0;
             z-index: 1000;
-            padding: 15px 0;
+            padding: 10px 0;
         }
-        .container { width: 90%; max-width: 1200px; margin: 0 auto; }
-        .nav-flex { display: flex; justify-content: space-between; align-items: center; }
-        .logo { font-size: 1.8rem; font-weight: 900; color: var(--primary); display: flex; align-items: center; gap: 10px; }
-        .theme-btn { background: none; border: none; font-size: 1.5rem; color: var(--text-main); cursor: pointer; transition: var(--transition); }
-        .theme-btn:hover { transform: rotate(20deg); color: var(--primary); }
 
-        /* --- Hero Slider --- */
-        .hero { position: relative; height: 500px; overflow: hidden; display: flex; align-items: center; justify-content: center; text-align: center; color: #fff; }
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .header-content {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .navbar-top {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 900;
+            color: var(--primary-color);
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .theme-toggle {
+            cursor: pointer;
+            font-size: 1.2rem;
+            background: none;
+            border: none;
+            color: var(--text-color);
+        }
+
+        /* القائمة الجديدة */
+        .nav-menu {
+            display: flex;
+            gap: 15px;
+            overflow-x: auto; /* للسماح بالتمرير في الجوال */
+            white-space: nowrap;
+            padding-bottom: 5px;
+            border-top: 1px solid var(--accent-color);
+            padding-top: 10px;
+        }
+
+        .nav-menu::-webkit-scrollbar { height: 4px; }
+        .nav-menu::-webkit-scrollbar-thumb { background: var(--primary-color); border-radius: 10px; }
+
+        .nav-link {
+            text-decoration: none;
+            color: var(--text-color);
+            font-weight: bold;
+            font-size: 0.95rem;
+            padding: 5px 10px;
+            border-radius: 5px;
+            transition: all 0.3s;
+            flex-shrink: 0;
+        }
+
+        .nav-link:hover, .nav-link.active {
+            background-color: var(--primary-color);
+            color: #fff;
+        }
+
+        /* --- Hero Section --- */
+        .hero {
+            position: relative;
+            height: 400px; /* تقليل الارتفاع قليلاً */
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: #fff;
+        }
+
         .hero-slide {
             position: absolute; top: 0; left: 0; width: 100%; height: 100%;
             background-size: cover; background-position: center;
-            opacity: 0; transition: opacity 1.5s ease-in-out;
-            z-index: 1;
+            opacity: 0; transition: opacity 1s ease-in-out; z-index: 1;
         }
+
         .hero-slide.active { opacity: 1; }
-        .hero-overlay { position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.5); z-index: 2; }
-        .hero-content { position: relative; z-index: 3; max-width: 800px; padding: 20px; animation: slideUp 1s ease; }
-        .hero h1 { font-size: 3rem; margin-bottom: 15px; text-shadow: 2px 2px 4px rgba(0,0,0,0.7); }
-        .hero p { font-size: 1.3rem; margin-bottom: 25px; font-weight: 300; }
-        .btn-cta {
-            background: var(--primary); color: #fff; padding: 12px 35px; border-radius: 50px; font-size: 1.1rem; font-weight: bold;
-            transition: var(--transition); border: 2px solid var(--primary);
-        }
-        .btn-cta:hover { background: transparent; color: #fff; transform: translateY(-3px); }
 
-        /* --- Features Slider (Marquee) --- */
-        .features-section { padding: 40px 0; background: var(--secondary); overflow: hidden; }
-        .features-wrapper { display: flex; animation: scroll 30s linear infinite; gap: 30px; width: max-content; }
-        .feature-item {
-            background: var(--bg-card); padding: 20px; border-radius: 15px; min-width: 300px;
-            display: flex; align-items: center; gap: 15px; box-shadow: var(--shadow);
-        }
-        .feature-icon { font-size: 2rem; color: var(--primary); }
-        .feature-text h4 { font-size: 1.1rem; margin-bottom: 5px; color: var(--text-main); }
-        .feature-text p { font-size: 0.85rem; color: var(--text-light); line-height: 1.4; }
-
-        @keyframes scroll {
-            0% { transform: translateX(0); }
-            100% { transform: translateX(50%); } /* Arabic RTL needs positive direction logic or adjustment */
-        }
-        /* Fix for RTL Marquee */
-        [dir="rtl"] .features-wrapper { animation: scrollRTL 30s linear infinite; }
-        @keyframes scrollRTL {
-            0% { transform: translateX(0); }
-            100% { transform: translateX(100%); } /* Simplified for example, usually needs duplication */
+        .hero-overlay {
+            position: absolute; top: 0; left: 0; width: 100%; height: 100%;
+            background: rgba(0, 0, 0, 0.5); z-index: 2;
         }
 
-        /* --- Products --- */
-        .section-title { text-align: center; margin: 60px 0 40px; font-size: 2.2rem; color: var(--primary); position: relative; }
-        .section-title::after { content: ''; width: 80px; height: 3px; background: var(--primary); position: absolute; bottom: -10px; left: 50%; transform: translateX(-50%); }
-        
-        .category-header { 
-            background: linear-gradient(45deg, var(--primary), var(--primary-dark));
-            color: #fff; padding: 15px; margin: 30px 0; border-radius: 10px; font-size: 1.4rem; display: flex; align-items: center; gap: 10px;
+        .hero-content {
+            position: relative; z-index: 3; max-width: 800px; padding: 20px;
+            animation: fadeInUp 1s ease-out;
+        }
+
+        .hero h1 { font-size: 2.2rem; margin-bottom: 10px; text-shadow: 2px 2px 4px rgba(0,0,0,0.7); }
+        .btn-main {
+            background-color: var(--primary-color); color: #fff; padding: 10px 25px;
+            border: none; border-radius: 50px; font-size: 1rem; cursor: pointer;
+            text-decoration: none; transition: transform 0.3s; display: inline-block; margin-top: 15px;
+        }
+
+        /* --- Features --- */
+        .features-section { padding: 40px 0; background-color: var(--accent-color); }
+        .section-title { text-align: center; margin-bottom: 30px; color: var(--primary-color); font-size: 1.8rem; }
+        .features-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 15px; }
+        .feature-card { background: var(--card-bg); padding: 15px; border-radius: 10px; box-shadow: var(--shadow); text-align: center; }
+        .feature-icon { font-size: 2rem; color: var(--primary-color); margin-bottom: 10px; }
+
+        /* --- Products Section --- */
+        .products-section { padding: 40px 0; }
+        .products-category-title {
+            background: var(--primary-color); color: #fff; padding: 12px;
+            border-radius: 8px; margin: 40px 0 20px 0; text-align: center; font-size: 1.3rem;
+            scroll-margin-top: 140px; /* لضبط التمرير مع القائمة */
         }
 
         .products-grid {
-            display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 25px;
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); /* الوضع الافتراضي للكمبيوتر */
+            gap: 20px;
         }
 
         .product-card {
-            background: var(--bg-card); border-radius: 20px; overflow: hidden; border: 1px solid var(--border);
-            position: relative; transition: var(--transition); display: flex; flex-direction: column;
+            background: var(--card-bg); border-radius: 12px; overflow: hidden;
+            box-shadow: var(--shadow); display: flex; flex-direction: column;
+            border: 1px solid var(--accent-color); transition: transform 0.2s;
         }
+
+        .product-img {
+            height: 180px; background-color: #f1f1f1; display: flex; align-items: center;
+            justify-content: center; color: #aaa; font-size: 2.5rem; position: relative;
+        }
+
+        .product-info { padding: 12px; flex-grow: 1; display: flex; flex-direction: column; }
+        .product-title { font-weight: bold; margin-bottom: 5px; font-size: 1rem; line-height: 1.3; }
+        .product-desc { font-size: 0.85rem; color: #777; margin-bottom: 8px; flex-grow: 1; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
         
-        .product-card:hover { transform: translateY(-10px); box-shadow: 0 15px 40px rgba(0,0,0,0.15); border-color: var(--primary); }
+        .price-box { margin-top: auto; display: flex; align-items: center; justify-content: space-between; margin-bottom: 8px; flex-wrap: wrap; }
+        .current-price { color: var(--price-color); font-weight: 800; font-size: 1.1rem; }
+        .old-price { text-decoration: line-through; color: #999; font-size: 0.85rem; }
 
-        .product-image {
-            height: 220px; background: #f9f9f9; display: flex; align-items: center; justify-content: center; position: relative; overflow: hidden;
+        .btn-cart {
+            width: 100%; padding: 8px; background: var(--whatsapp-color); color: white;
+            border: none; border-radius: 6px; cursor: pointer; font-weight: bold;
+            display: flex; align-items: center; justify-content: center; gap: 6px; font-size: 0.9rem;
         }
-        
-        /* تأثير الصورة */
-        .product-image img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s ease; }
-        .product-card:hover .product-image img { transform: scale(1.1); }
-        
-        .placeholder-icon { font-size: 4rem; color: #ddd; }
 
-        /* التلميحات Tooltip */
-        .tooltip-btn {
-            position: absolute; top: 10px; left: 10px; background: rgba(255,255,255,0.9); width: 35px; height: 35px; border-radius: 50%;
-            display: flex; align-items: center; justify-content: center; color: var(--primary); cursor: pointer; z-index: 10;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-        }
-        .tooltip-text {
-            position: absolute; top: 50px; left: 10px; background: var(--text-main); color: var(--bg-body); padding: 10px;
-            font-size: 0.8rem; border-radius: 8px; width: 200px; display: none; z-index: 20; text-align: right;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
-        }
-        .product-card:hover .tooltip-text { display: block; animation: fadeIn 0.3s; }
-
-        .product-info { padding: 15px; flex-grow: 1; display: flex; flex-direction: column; }
-        .p-cat { font-size: 0.8rem; color: var(--primary); font-weight: bold; margin-bottom: 5px; }
-        .p-title { font-size: 1.1rem; font-weight: 700; margin-bottom: 10px; line-height: 1.4; color: var(--text-main); }
-        
-        .price-box { margin-top: auto; display: flex; align-items: center; justify-content: space-between; margin-bottom: 15px; }
-        .price-current { font-size: 1.3rem; font-weight: 900; color: var(--primary); }
-        .price-old { text-decoration: line-through; color: #aaa; font-size: 0.9rem; margin-right: 5px; }
-
-        .btn-order {
-            width: 100%; padding: 12px; background: var(--text-main); color: var(--bg-body); border: none; border-radius: 10px;
-            font-weight: bold; cursor: pointer; transition: var(--transition); display: flex; align-items: center; justify-content: center; gap: 8px;
-        }
-        .btn-order:hover { background: var(--whatsapp); color: #fff; }
-
-        /* --- Order Form --- */
-        .order-section { padding: 80px 0; background: var(--secondary); margin-top: 60px; }
-        .form-box {
-            background: var(--bg-card); max-width: 600px; margin: 0 auto; padding: 40px; border-radius: 20px; box-shadow: var(--shadow);
-        }
-        .input-group { margin-bottom: 20px; }
-        .input-group label { display: block; margin-bottom: 8px; font-weight: bold; color: var(--text-main); }
-        .input-group input, .input-group textarea, .input-group select {
-            width: 100%; padding: 12px; border-radius: 10px; border: 1px solid #ddd;
-            background: var(--bg-body); color: var(--text-main); outline: none; transition: var(--transition);
-        }
-        .input-group input:focus { border-color: var(--primary); }
-
-        /* --- Footer & Floating --- */
-        footer { background: #1a1a1a; color: #fff; padding: 30px 0; text-align: center; margin-top: 0; }
-        
-        .floating-container { position: fixed; bottom: 20px; right: 20px; display: flex; flex-direction: column; gap: 15px; z-index: 2000; }
-        .float-btn {
-            width: 60px; height: 60px; border-radius: 50%; display: flex; align-items: center; justify-content: center;
-            color: white; font-size: 1.8rem; box-shadow: 0 4px 15px rgba(0,0,0,0.3); transition: transform 0.3s;
-        }
-        .float-btn:hover { transform: scale(1.1); }
-        .wa-float { background: var(--whatsapp); }
-        .call-float { background: var(--primary); }
-
-        @keyframes slideUp { from { transform: translateY(50px); opacity: 0; } to { transform: translateY(0); opacity: 1; } }
-        @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
-
-        /* Responsive */
-        @media (max-width: 768px) {
-            .hero h1 { font-size: 2rem; }
-            .hero { height: 400px; }
-            .products-grid { grid-template-columns: 1fr 1fr; }
-            .feature-item { min-width: 250px; }
-        }
+        /* --- Mobile Customization (2 Columns) --- */
         @media (max-width: 480px) {
-            .products-grid { grid-template-columns: 1fr; }
-            .form-box { padding: 20px; }
+            .products-grid {
+                grid-template-columns: repeat(2, 1fr); /* إجبار عمودين */
+                gap: 10px; /* تقليل المسافة */
+            }
+            .product-card { border-radius: 8px; }
+            .product-img { height: 120px; font-size: 1.8rem; }
+            .product-info { padding: 8px; }
+            .product-title { font-size: 0.85rem; height: 35px; overflow: hidden; margin-bottom: 3px;}
+            .product-desc { display: none; /* إخفاء الوصف الطويل في الجوال لتوفير المساحة */ }
+            .price-box { flex-direction: column; align-items: flex-start; gap: 2px; margin-bottom: 5px; }
+            .current-price { font-size: 0.95rem; }
+            .old-price { font-size: 0.75rem; }
+            .btn-cart { padding: 6px; font-size: 0.8rem; }
+            
+            /* تحسين الهيدر في الجوال */
+            .logo { font-size: 1.3rem; }
+            .hero { height: 300px; }
+            .hero h1 { font-size: 1.6rem; }
         }
+
+        /* --- Order Form & Footer --- */
+        .order-form-section { padding: 50px 0; background-color: var(--accent-color); }
+        .form-container { max-width: 600px; margin: 0 auto; background: var(--card-bg); padding: 25px; border-radius: 12px; box-shadow: var(--shadow); }
+        .form-group { margin-bottom: 15px; }
+        .form-group label { display: block; margin-bottom: 5px; font-weight: bold; font-size: 0.9rem; }
+        .form-group input, .form-group textarea { width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 6px; background-color: var(--bg-color); color: var(--text-color); }
+        
+        footer { background-color: #222; color: #fff; padding: 30px 0; text-align: center; font-size: 0.9rem; }
+        
+        .floating-btns { position: fixed; bottom: 20px; right: 20px; display: flex; flex-direction: column; gap: 10px; z-index: 2000; }
+        .float-btn { width: 50px; height: 50px; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-size: 1.3rem; box-shadow: 0 4px 10px rgba(0,0,0,0.3); text-decoration: none; }
+        .btn-wa-float { background-color: var(--whatsapp-color); }
+        .btn-call-float { background-color: var(--primary-color); }
+
+        @keyframes fadeInUp { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
     </style>
 </head>
 <body>
 
-    <!-- الهيدر -->
+    <!-- الهيدر مع القائمة الجديدة -->
     <header>
-        <div class="container nav-flex">
-            <a href="#" class="logo"><i class="fa-solid fa-gem"></i> Nona Beauty</a>
-            <button class="theme-btn" id="themeToggle" title="تبديل الوضع"><i class="fa-regular fa-moon"></i></button>
+        <div class="container">
+            <div class="header-content">
+                <!-- الصف العلوي: الشعار والوضع الليلي -->
+                <div class="navbar-top">
+                    <a href="#" class="logo">
+                        <i class="fa-solid fa-spa"></i> Nona Beauty
+                    </a>
+                    <button class="theme-toggle" id="theme-toggle" title="تغيير الوضع">
+                        <i class="fa-solid fa-moon"></i>
+                    </button>
+                </div>
+                
+                <!-- صف القائمة (الأقسام) -->
+                <nav class="nav-menu">
+                    <a href="#italian-products" class="nav-link">المنتجات الإيطالية</a>
+                    <a href="#cream-products" class="nav-link">الكريمات والبهاق</a>
+                    <a href="#peel-products" class="nav-link">المقشرات</a>
+                    <a href="#order-form" class="nav-link" style="color:var(--primary-color)">طلب سريع</a>
+                </nav>
+            </div>
         </div>
     </header>
 
-    <!-- الواجهة الرئيسية (سلايدر) -->
+    <!-- الواجهة الرئيسية -->
     <section class="hero">
-        <!-- الصور الخلفية (صور جمالية عامة) -->
-        <div class="hero-slide active" style="background-image: url('https://images.unsplash.com/photo-1620916566398-39f1143ab7be?q=80&w=1920&auto=format&fit=crop');"></div>
-        <div class="hero-slide" style="background-image: url('https://images.unsplash.com/photo-1596462502278-27bfdd403348?q=80&w=1920&auto=format&fit=crop');"></div>
-        <div class="hero-slide" style="background-image: url('https://images.unsplash.com/photo-1556228720-1910d5755104?q=80&w=1920&auto=format&fit=crop');"></div>
+        <div class="hero-slide active" style="background-image: url('https://images.unsplash.com/photo-1616394584738-fc6e612e71b9?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80');"></div>
+        <div class="hero-slide" style="background-image: url('https://images.unsplash.com/photo-1571781535242-b248471b8d63?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80');"></div>
+        <div class="hero-slide" style="background-image: url('https://images.unsplash.com/photo-1556228720-1910d5755104?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80');"></div>
         
         <div class="hero-overlay"></div>
         
         <div class="hero-content">
             <h1>متجر نونا بيوتي</h1>
-            <p>وجهتك الأولى لعلاج البهاق وتوحيد لون البشرة في السعودية والخليج.<br>منتجات أصلية، نتائج مضمونة، وخصوصية تامة.</p>
-            <a href="#products-area" class="btn-cta">تسوقي الآن <i class="fa-solid fa-arrow-left"></i></a>
+            <p>الوجهة الأولى لحلول البهاق والعناية بالبشرة</p>
+            <a href="#cream-products" class="btn-main">تصفحي المنتجات</a>
         </div>
     </section>
 
-    <!-- شريط المميزات المتحرك -->
+    <!-- المميزات -->
     <section class="features-section">
         <div class="container">
-            <!-- كررنا العناصر لضمان حركة السلايدر المستمر -->
-            <div class="features-wrapper" id="featuresSlider">
-                <!-- سيتم ملؤها بالجافاسكريبت -->
-            </div>
+            <h2 class="section-title">لماذا نونا بيوتي؟</h2>
+            <div class="features-grid" id="features-container"></div>
         </div>
     </section>
 
-    <!-- منطقة المنتجات -->
-    <div class="container" id="products-area">
-        <h2 class="section-title">تشكيلة منتجاتنا الحصرية</h2>
+    <!-- المنتجات -->
+    <section class="products-section" id="products">
+        <div class="container">
+            
+            <div id="italian-products-title" class="products-category-title">المنتجات الإيطالية (Kleraderm)</div>
+            <div class="products-grid" id="italian-products"></div>
 
-        <!-- 1. المنتجات الايطالية -->
-        <div class="category-header"><i class="fa-solid fa-flag"></i> المنتجات الإيطالية (Kleraderm)</div>
-        <div class="products-grid" id="italian-list"></div>
+            <div id="cream-products-title" class="products-category-title">قسم كريمات البنكوين والبهاق</div>
+            <div class="products-grid" id="cream-products"></div>
 
-        <!-- 2. الكريمات والبنكوين -->
-        <div class="category-header"><i class="fa-solid fa-jar"></i> قسم كريمات البنكوين وعلاج البهاق</div>
-        <div class="products-grid" id="creams-list"></div>
+            <div id="peel-products-title" class="products-category-title">قسم المقشرات الطبية</div>
+            <div class="products-grid" id="peel-products"></div>
 
-        <!-- 3. المقشرات -->
-        <div class="category-header"><i class="fa-solid fa-flask"></i> قسم المقشرات الطبية</div>
-        <div class="products-grid" id="peels-list"></div>
-    </div>
+        </div>
+    </section>
 
     <!-- استمارة الطلب -->
-    <section class="order-section">
+    <section class="order-form-section" id="order-form">
         <div class="container">
-            <h2 class="section-title" style="margin-top:0">أكملي طلبك بسهولة</h2>
-            <div class="form-box">
-                <form id="orderForm">
-                    <div class="input-group">
-                        <label>الاسم الكريم</label>
-                        <input type="text" id="c_name" placeholder="أدخل اسمك هنا" required>
+            <h2 class="section-title">إتمام الطلب</h2>
+            <div class="form-container">
+                <form id="whatsappForm">
+                    <div class="form-group">
+                        <label>الاسم</label>
+                        <input type="text" id="c_name" placeholder="ادخل اسمك" required>
                     </div>
-                    <div class="input-group">
-                        <label>رقم الجوال (مع مفتاح الدولة)</label>
+                    <div class="form-group">
+                        <label>رقم الجوال</label>
                         <input type="tel" id="c_phone" placeholder="05xxxxxxxx" required>
                     </div>
-                    <div class="input-group">
-                        <label>المنطقة / المدينة</label>
-                        <input type="text" id="c_city" placeholder="الرياض، جدة..." required>
+                    <div class="form-group">
+                        <label>المنطقة</label>
+                        <input type="text" id="c_area" placeholder="المدينة والحي" required>
                     </div>
-                    <div class="input-group">
-                        <label>نوع الطلب / المنتجات المطلوبة</label>
-                        <textarea id="c_order" rows="4" placeholder="اكتب اسماء الكريمات أو انسخها من المتجر..." required></textarea>
+                    <div class="form-group">
+                        <label>الطلبات</label>
+                        <textarea id="c_order" rows="3" placeholder="اكتب المنتجات المطلوبة..." required></textarea>
                     </div>
-                    <button type="submit" class="btn-cta" style="width: 100%; border:none;">
-                        <i class="fa-brands fa-whatsapp"></i> إرسال الطلب عبر الواتساب
+                    <button type="submit" class="btn-main" style="width: 100%;">
+                        <i class="fa-brands fa-whatsapp"></i> إرسال للواتساب
                     </button>
                 </form>
             </div>
@@ -293,166 +351,137 @@
     <!-- الفوتر -->
     <footer>
         <div class="container">
-            <h3>متجر نونا بيوتي | Nona Beauty</h3>
-            <p>جميع الحقوق محفوظة © 2025. توصيل سريع لكافة مدن المملكة والخليج.</p>
+            <p>جميع الحقوق محفوظة &copy; 2025 متجر نونا بيوتي</p>
         </div>
     </footer>
 
-    <!-- الأزرار العائمة -->
-    <div class="floating-container">
-        <a href="https://wa.me/966500177987" target="_blank" class="float-btn wa-float" title="تواصل واتساب">
-            <i class="fa-brands fa-whatsapp"></i>
-        </a>
-        <a href="tel:0500177987" class="float-btn call-float" title="اتصال هاتفي">
-            <i class="fa-solid fa-phone"></i>
-        </a>
+    <!-- أزرار عائمة -->
+    <div class="floating-btns">
+        <a href="https://wa.me/966500177987" class="float-btn btn-wa-float" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+        <a href="tel:0500177987" class="float-btn btn-call-float"><i class="fa-solid fa-phone"></i></a>
     </div>
 
-    <!-- جافاسكريبت -->
+    <!-- JavaScript -->
     <script>
-        // --- 1. الوضع الليلي/النهاري ---
-        const themeBtn = document.getElementById('themeToggle');
-        const icon = themeBtn.querySelector('i');
-        
-        themeBtn.addEventListener('click', () => {
+        // الوضع الليلي
+        const themeToggle = document.getElementById('theme-toggle');
+        const icon = themeToggle.querySelector('i');
+        themeToggle.addEventListener('click', () => {
             document.body.classList.toggle('dark-mode');
-            if(document.body.classList.contains('dark-mode')){
-                icon.className = 'fa-regular fa-sun';
-            } else {
-                icon.className = 'fa-regular fa-moon';
-            }
+            icon.classList.toggle('fa-moon');
+            icon.classList.toggle('fa-sun');
         });
 
-        // --- 2. سلايدر الصور الرئيسي ---
-        let slideIndex = 0;
+        // السلايدر
+        let currentSlide = 0;
         const slides = document.querySelectorAll('.hero-slide');
         setInterval(() => {
-            slides[slideIndex].classList.remove('active');
-            slideIndex = (slideIndex + 1) % slides.length;
-            slides[slideIndex].classList.add('active');
+            slides[currentSlide].classList.remove('active');
+            currentSlide = (currentSlide + 1) % slides.length;
+            slides[currentSlide].classList.add('active');
         }, 4000);
 
-        // --- 3. بيانات المنتجات (Data) ---
-        const productsDB = {
-            italian: [
-                {name: "جل واقي من الشمس والتجاعيد Kleraderm", price: 97, old: 150, desc: "حماية كاملة من الشمس مع خصائص مضادة للشيخوخة."},
-                {name: "غسول للوجه وللنضارة Kleraderm", price: 100, old: 195, desc: "ينظف المسام بعمق ويعطي نضارة فورية."},
-                {name: "كريم مرطب وحمايه Kleraderm", price: 97, old: 154, desc: "ترطيب عميق يدوم طويلاً."},
-                {name: "كريم مبيض ومرطب لليد Kleraderm", price: 150, old: 250, desc: "عناية خاصة باليدين للتفتيح والنعومة."},
-                {name: "لوشن مبيض للجسم Kleraderm", price: 150, old: 285, desc: "توحيد لون الجسم بالكامل."},
-                {name: "سيروم مفتح ومبيض للهالات Kleraderm", price: 150, old: 295, desc: "علاج فعال للهالات السوداء تحت العين."}
-            ],
-            creams: [
-                {name: "كريم البنكوين (ماك) 40% + مقشر", price: 175, old: null, desc: "عصار 40% مع ريتينويك أسيد 0.05%."},
-                {name: "بنكوين يونيكون (أبو بنت) 40% كوجيك", price: 185, old: null, desc: "معزز بالكوجيك والالفا اربوتين."},
-                {name: "بنكوين يونيكون (أبو بنت) 40% خام", price: 185, old: null, desc: "تركيبة خام نقية لتوحيد اللون."},
-                {name: "كريم البنكوين (ماك) 40% خام", price: 185, old: null, desc: "بدون إضافات مقشرة."},
-                {name: "كريم البنكوين (ماك) 20%", price: 65, old: null, desc: "تركيز مخفف للمناطق الحساسة."},
-                {name: "كريم معزز (مسرع) للوجه", price: 250, old: null, desc: "تهيئة البشرة للوجه (60 جرام)."},
-                {name: "كريم معزز (مسرع) للجسم", price: 250, old: null, desc: "تهيئة بشرة الجسم (60 جرام)."},
-                {name: "بنكوين يونيكون (أبو بنت) 80% كوجيك", price: 185, old: null, desc: "تركيز عالي جداً مع تفتيح."},
-                {name: "جهاز ليزر منزلي تبريد", price: 1200, old: null, desc: "ومضات غير محدودة للوجه والجسم."},
-                {name: "كريم بنكوين طبي 40% (60 جم)", price: 440, old: null, desc: "تركيبة طبية خاصة حجم كبير."},
-                {name: "Sensequin Cream للمناطق الحساسة", price: 220, old: null, desc: "تبييض المناطق الحساسة 60 جرام."},
-                {name: "Rwaquin Body (جلد الوزة)", price: 250, old: null, desc: "إزالة الشعر تحت الجلد وتفتيح."},
-                {name: "Knee whitening الركب والأكواع", price: 250, old: null, desc: "تبييض وتفتيح عميق للمفاصل."},
-                {name: "OK Intensive Body مقشر", price: 290, old: null, desc: "تقشير وتبييض الجسم 120 جرام."},
-                {name: "Rwaquin للنضارة", price: 150, old: null, desc: "نضارة وتغذية البشرة والترميم."},
-                {name: "Benzaclin 5% للحبوب", price: 175, old: null, desc: "علاج الحبوب الملتهبة."},
-                {name: "MBS Cream للكلف", price: 210, old: null, desc: "علاج الكلف والتصبغ العميق."},
-                {name: "كريم مخدر موضعي 96%", price: 30, old: null, desc: "تخدير عالي للمنطقة."},
-                {name: "بودرة بنكوين خام هندي (كيلو)", price: 1379, old: null, desc: "بودرة خام لعلاج البهاق."},
-                {name: "بودرة بنكوين خام هندي (نص)", price: 996, old: null, desc: "بودرة خام نصف كيلو."},
-                {name: "كريم بنكوين (ديرماك) 40%", price: 190, old: null, desc: "توحيد لون البشرة ماركة ديرماك."}
-            ],
-            peels: [
-                {name: "محلول تقشير حمض اللاكتيك", price: 155.9, old: null, desc: "حجم 50 ملم."},
-                {name: "صابونة يونيكون Monobenzone", price: 82.9, old: null, desc: "للتنظيف العلاجي."},
-                {name: "محلول يونيكون للتقشير العميق", price: 155, old: null, desc: "تقشير قوي."},
-                {name: "مقشر ارتن أي (Aretin-A)", price: 35.9, old: null, desc: "لحب الشباب والبقع."},
-                {name: "جل فازلين طبي نقي (1000جم)", price: 75, old: null, desc: "حماية قصوى من الجفاف."},
-                {name: "محلول تقشير TCA 50%", price: 155.9, old: null, desc: "تقشير عميق لبشرة صافية."},
-                {name: "مقشر حمض الريتينوك", price: 140, old: null, desc: "عالي الفعالية لتفتيح البشرة."}
-            ]
-        };
+        // المميزات
+        const features = [
+            { icon: 'fa-globe', title: 'تعدد المصادر', text: 'بنكوين هندي وإيراني.' },
+            { icon: 'fa-certificate', title: 'جودة مضمونة', text: 'منتجات أصلية 100%.' },
+            { icon: 'fa-hand-holding-medical', title: 'حلول للبهاق', text: 'عناية متخصصة.' },
+            { icon: 'fa-user-secret', title: 'خصوصية تامة', text: 'سرية في الطلب والتوصيل.' }
+        ];
+        const fContainer = document.getElementById('features-container');
+        features.forEach(f => {
+            fContainer.innerHTML += `
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="fa-solid ${f.icon}"></i></div>
+                    <h3>${f.title}</h3>
+                    <p style="font-size:0.9rem">${f.text}</p>
+                </div>
+            `;
+        });
 
-        // --- 4. دالة عرض المنتجات ---
-        function renderProducts(list, containerId, iconClass) {
+        // دالة المنتجات
+        function createProductCard(name, price, oldPrice, desc, containerId) {
             const container = document.getElementById(containerId);
-            list.forEach(item => {
-                const oldPriceHtml = item.old ? `<span class="price-old">${item.old}</span>` : '';
-                const waLink = `https://wa.me/966500177987?text=${encodeURIComponent('أرغب بطلب: ' + item.name)}`;
-                
-                // صورة عشوائية تجميلية للتمثيل (يمكنك تغييرها)
-                // هنا نستخدم أيقونة كمثال لأن الصور غير متوفرة
-                
-                const card = `
+            const discountHTML = oldPrice ? `<span class="old-price">${oldPrice}</span>` : '';
+            const waMsg = `مرحباً، أرغب بطلب: ${name}`;
+            const waLink = `https://wa.me/966500177987?text=${encodeURIComponent(waMsg)}`;
+
+            const html = `
                 <div class="product-card">
-                    <div class="tooltip-btn"><i class="fa-solid fa-info"></i></div>
-                    <div class="tooltip-text">${item.desc}</div>
-                    
-                    <div class="product-image">
-                        <i class="fa-solid ${iconClass} placeholder-icon"></i>
-                        <!-- يمكنك وضع وسم img هنا بدلاً من الأيقونة -->
-                    </div>
-                    
+                    <div class="product-img"><i class="fa-solid fa-pump-soap"></i></div>
                     <div class="product-info">
-                        <div class="p-title">${item.name}</div>
+                        <div class="product-title">${name}</div>
+                        <div class="product-desc">${desc}</div>
                         <div class="price-box">
-                            <span class="price-current">${item.price} ر.س</span>
-                            ${oldPriceHtml}
+                            <span class="current-price">${price} ر.س</span>
+                            ${discountHTML}
                         </div>
-                        <button class="btn-order" onclick="window.open('${waLink}', '_blank')">
-                            <i class="fa-brands fa-whatsapp"></i> اطلب الآن
+                        <button class="btn-cart" onclick="window.open('${waLink}', '_blank')">
+                            <i class="fa-brands fa-whatsapp"></i> طلب
                         </button>
                     </div>
                 </div>
-                `;
-                container.innerHTML += card;
-            });
+            `;
+            container.innerHTML += html;
         }
 
-        renderProducts(productsDB.italian, 'italian-list', 'fa-pump-soap');
-        renderProducts(productsDB.creams, 'creams-list', 'fa-spray-can');
-        renderProducts(productsDB.peels, 'peels-list', 'fa-prescription-bottle-medical');
-
-        // --- 5. دالة المميزات (Slider Logic) ---
-        const features = [
-            {icon: 'fa-earth-americas', title: 'تعدد المصادر', text: 'خيارات متنوعة تشمل البنكوين الهندي والإيراني.'},
-            {icon: 'fa-certificate', title: 'أصالة وجودة', text: 'منتجات أصلية 100% مستوردة مباشرة.'},
-            {icon: 'fa-hand-dots', title: 'حلول للبهاق', text: 'وجهة متخصصة لعلاج وتوحيد لون البشرة.'},
-            {icon: 'fa-vial', title: 'تركيزات عالية', text: 'تركيزات مدروسة لتقليل الميلانين بفعالية.'},
-            {icon: 'fa-box-open', title: 'تغليف آمن', text: 'حماية كاملة من الضوء والحرارة.'},
-            {icon: 'fa-user-shield', title: 'خصوصية وسرية', text: 'تجربة تسوق تتسم بالخصوصية التامة.'},
-            {icon: 'fa-rotate', title: 'تحديث مستمر', text: 'أحدث تواريخ الإنتاج وصلاحية طويلة.'}
+        // البيانات (Data)
+        const italianData = [
+            {name: "جل واقي شمس وتجاعيد Kleraderm", price: 97, old: 150, desc: "حماية فائقة ومضاد تجاعيد."},
+            {name: "غسول للوجه والنضارة Kleraderm", price: 100, old: 195, desc: "ينظف بعمق ويمنح نضارة."},
+            {name: "كريم مرطب وحماية Kleraderm", price: 97, old: 154, desc: "ترطيب يومي وحماية."},
+            {name: "كريم مبيض لليد Kleraderm", price: 150, old: 250, desc: "عناية خاصة وتفتيح لليدين."},
+            {name: "لوشن مبيض للجسم Kleraderm", price: 150, old: 285, desc: "توحيد لون الجسم بالكامل."},
+            {name: "سيروم للهالات Kleraderm", price: 150, old: 295, desc: "علاج مركز للهالات السوداء."}
         ];
 
-        const featureSlider = document.getElementById('featuresSlider');
-        // تكرار المميزات مرتين لعمل حركة سلسة
-        const featureHTML = features.map(f => `
-            <div class="feature-item">
-                <div class="feature-icon"><i class="fa-solid ${f.icon}"></i></div>
-                <div class="feature-text">
-                    <h4>${f.title}</h4>
-                    <p>${f.text}</p>
-                </div>
-            </div>
-        `).join('');
-        featureSlider.innerHTML = featureHTML + featureHTML; // Double content for loop
+        const creamData = [
+            {name: "كريم بنكوين (ماك) 40% + مقشر", price: 175, old: null, desc: "عصار 40% مع ريتينويك أسيد."},
+            {name: "بنكوين يونيكون (أبو بنت) 40% كوجيك", price: 185, old: null, desc: "مع كوجيك والفا اربوتين."},
+            {name: "بنكوين يونيكون (أبو بنت) 40% خام", price: 185, old: null, desc: "تركيبة خام نقية."},
+            {name: "كريم بنكوين (ماك) 40% خام", price: 185, old: null, desc: "بدون إضافات مقشرة."},
+            {name: "كريم بنكوين (ماك) 20%", price: 65, old: null, desc: "تركيز مخفف."},
+            {name: "كريم معزز (مسرع) للوجه", price: 250, old: null, desc: "تهيئة بشرة الوجه 60 جرام."},
+            {name: "كريم معزز (مسرع) للجسم", price: 250, old: null, desc: "تهيئة بشرة الجسم 60 جرام."},
+            {name: "بنكوين يونيكون 80% كوجيك", price: 185, old: null, desc: "تركيز عالي جداً."},
+            {name: "جهاز ليزر منزلي تبريد", price: 1200, old: null, desc: "ومضات غير محدودة."},
+            {name: "كريم بنكوين طبي 40% (60 جم)", price: 440, old: null, desc: "تركيبة طبية خاصة."},
+            {name: "Sensequin للمناطق الحساسة", price: 220, old: null, desc: "تبييض المناطق الحساسة."},
+            {name: "Rwaquin Body (جلد الوزة)", price: 250, old: null, desc: "إزالة الشعر تحت الجلد."},
+            {name: "Knee whitening للركب", price: 250, old: null, desc: "تبييض الركب والأكواع."},
+            {name: "OK Intensive مقشر للجسم", price: 290, old: null, desc: "تقشير وتبييض الجسم."},
+            {name: "MBS Cream للكلف", price: 210, old: null, desc: "علاج الكلف العميق."},
+            {name: "كريم مخدر موضعي 96%", price: 30, old: null, desc: "تخدير عالي."},
+            {name: "بودرة بنكوين خام هندي (كيلو)", price: 1379, old: null, desc: "بودرة خام أصلية."},
+            {name: "بودرة بنكوين خام هندي (نص)", price: 996, old: null, desc: "نصف كيلو بودرة."},
+            {name: "كريم بنكوين (ديرماك) 40%", price: 190, old: null, desc: "توحيد لون البشرة."}
+        ];
 
-        // --- 6. معالجة النموذج (Form) ---
-        document.getElementById('orderForm').addEventListener('submit', function(e) {
+        const peelData = [
+            {name: "محلول حمض اللاكتيك", price: 155.9, old: null, desc: "تقشير لطيف 50 مل."},
+            {name: "صابونة يونيكون Monobenzone", price: 82.9, old: null, desc: "صابونة طبية."},
+            {name: "محلول يونيكون للتقشير", price: 155, old: null, desc: "تقشير عميق."},
+            {name: "مقشر ارتن أي (Aretin-A)", price: 35.9, old: null, desc: "لحب الشباب."},
+            {name: "جل فازلين طبي نقي 1kg", price: 75, old: null, desc: "حماية قصوى."},
+            {name: "محلول تقشير TCA 50%", price: 155.9, old: null, desc: "تقشير كيميائي."},
+            {name: "مقشر حمض الريتينوك", price: 140, old: null, desc: "عالي الفعالية للتفتيح."}
+        ];
+
+        italianData.forEach(p => createProductCard(p.name, p.price, p.old, p.desc, 'italian-products'));
+        creamData.slice(0, 20).forEach(p => createProductCard(p.name, p.price, p.old, p.desc, 'cream-products'));
+        peelData.forEach(p => createProductCard(p.name, p.price, p.old, p.desc, 'peel-products'));
+
+        // معالجة الطلب
+        document.getElementById('whatsappForm').addEventListener('submit', function(e) {
             e.preventDefault();
             const name = document.getElementById('c_name').value;
             const phone = document.getElementById('c_phone').value;
-            const city = document.getElementById('c_city').value;
+            const area = document.getElementById('c_area').value;
             const order = document.getElementById('c_order').value;
-
-            const msg = `*طلب جديد من متجر نونا بيوتي* 🛍️\n\n👤 الاسم: ${name}\n📱 الجوال: ${phone}\n📍 المدينة: ${city}\n📦 الطلب:\n${order}`;
             
-            window.open(`https://wa.me/966500177987?text=${encodeURIComponent(msg)}`, '_blank');
+            const message = `*طلب جديد - نونا بيوتي* 🛍️\n👤 ${name}\n📱 ${phone}\n📍 ${area}\n📦 ${order}`;
+            window.open(`https://wa.me/966500177987?text=${encodeURIComponent(message)}`, '_blank');
         });
-
     </script>
 </body>
 </html>
