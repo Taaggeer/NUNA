@@ -3,13 +3,13 @@
   <channel>
     <title>Nona Beauty | نونا بيوتي</title>
     <link>http://nuna-beauty.com</link>
-    <description>المتجر الأول لعلاج البهاق وتوحيد لون البشرة والمنتجات الإيطالية في السعودية والخليج.</description>
+    <description>الوجهة الأولى في السعودية والخليج لمنتجات البهاق، كريم بنكوين، والمنتجات الإيطالية الفاخرة.</description>
     
     <!-- قسم المنتجات الإيطالية -->
     <item>
       <g:id>IT-001</g:id>
-      <g:title>جل واقي من الشمس والتجاعيد Kleraderm إيطالي</g:title>
-      <g:description>حماية فائقة من الشمس مع خصائص مضادة للتجاعيد، منتج إيطالي أصلي من Kleraderm.</g:description>
+      <g:title>جل واقي شمس وتجاعيد Kleraderm</g:title>
+      <g:description>حماية فائقة من الشمس ومقاومة التجاعيد. منتج إيطالي أصلي.</g:description>
       <g:link>http://nuna-beauty.com/?product=IT-001</g:link>
       <g:image_link>https://cdn.salla.sa/EZjdor/f4fa3c9d-b86b-491a-a2f1-15d13ed7ddf0-500x432.98969072165-EPZp5vjHOvl1h82ZoHstznTO0zddJNWHwtGIVngH.png</g:image_link>
       <g:condition>new</g:condition>
@@ -20,70 +20,70 @@
     </item>
     <item>
       <g:id>IT-002</g:id>
-      <g:title>غسول للوجه وللنضارة Kleraderm إيطالي</g:title>
-      <g:description>ينظف البشرة بعمق ويمنحها نضارة وإشراق فوري، منتج إيطالي.</g:description>
+      <g:title>غسول للوجه والنضارة Kleraderm</g:title>
+      <g:description>تنظيف عميق يمنح البشرة نضارة فورية.</g:description>
       <g:link>http://nuna-beauty.com/?product=IT-002</g:link>
       <g:image_link>https://cdn.salla.sa/EZjdor/0e49e5b6-0e5e-4088-8977-f3062d1f5383-500x432.98969072165-rb30ZPbIGKrOLeCibzgWeQda9dS0pPagJ0JKt1UU.png</g:image_link>
       <g:condition>new</g:condition>
       <g:availability>in_stock</g:availability>
       <g:price>100.00 SAR</g:price>
       <g:brand>Kleraderm</g:brand>
-      <g:google_product_category>567</g:google_product_category>
+      <g:google_product_category>473</g:google_product_category>
     </item>
     <item>
       <g:id>IT-003</g:id>
-      <g:title>كريم مرطب وحماية Kleraderm إيطالي</g:title>
-      <g:description>ترطيب عميق وحماية يومية للحفاظ على حاجز البشرة.</g:description>
+      <g:title>كريم مرطب وحماية Kleraderm</g:title>
+      <g:description>ترطيب يومي وحماية للحاجز الجلدي.</g:description>
       <g:link>http://nuna-beauty.com/?product=IT-003</g:link>
       <g:image_link>https://cdn.salla.sa/EZjdor/d50a4c04-5f9e-4cb3-9d22-fc8a18b30b13-500x432.98969072165-uSAVsBTtkq3TQeGbQZDcgbapGE2KwpRbLYKHrE2Z.png</g:image_link>
       <g:condition>new</g:condition>
       <g:availability>in_stock</g:availability>
       <g:price>97.00 SAR</g:price>
       <g:brand>Kleraderm</g:brand>
-      <g:google_product_category>567</g:google_product_category>
+      <g:google_product_category>473</g:google_product_category>
     </item>
     <item>
       <g:id>IT-004</g:id>
-      <g:title>كريم مبيض ومرطب لليد Kleraderm</g:title>
-      <g:description>عناية خاصة باليدين لتفتيح وتنعيم البشرة الجافة.</g:description>
+      <g:title>كريم مبيض لليد Kleraderm</g:title>
+      <g:description>عناية خاصة وتفتيح لليدين وترطيب عميق.</g:description>
       <g:link>http://nuna-beauty.com/?product=IT-004</g:link>
       <g:image_link>https://cdn.salla.sa/EZjdor/4d5dc83d-880a-45ff-948e-17faf4f266ad-500x432.98969072165-QbtgT689FaZd0DaBEglV7azox1FsxuOCC9LOa8EC.png</g:image_link>
       <g:condition>new</g:condition>
       <g:availability>in_stock</g:availability>
       <g:price>150.00 SAR</g:price>
       <g:brand>Kleraderm</g:brand>
-      <g:google_product_category>567</g:google_product_category>
+      <g:google_product_category>473</g:google_product_category>
     </item>
     <item>
       <g:id>IT-005</g:id>
       <g:title>لوشن مبيض للجسم Kleraderm</g:title>
-      <g:description>لوشن فاخر لتفتيح الجسم وتوحيد لونه بالكامل.</g:description>
+      <g:description>توحيد لون الجسم بالكامل وتفتيح التصبغات.</g:description>
       <g:link>http://nuna-beauty.com/?product=IT-005</g:link>
       <g:image_link>https://cdn.salla.sa/EZjdor/4f642cd3-7c10-4df2-8907-b033e76056c9-500x432.98969072165-TQFBrloeT8sdECBVUCVbGpv6TZlHayN4OvS80Dq8.png</g:image_link>
       <g:condition>new</g:condition>
       <g:availability>in_stock</g:availability>
       <g:price>150.00 SAR</g:price>
       <g:brand>Kleraderm</g:brand>
-      <g:google_product_category>567</g:google_product_category>
+      <g:google_product_category>473</g:google_product_category>
     </item>
     <item>
       <g:id>IT-006</g:id>
-      <g:title>سيروم مفتح ومبيض للهالات Kleraderm</g:title>
-      <g:description>تركيبة مركزة لعلاج الهالات السوداء وإضاءة منطقة العين.</g:description>
+      <g:title>سيروم للهالات Kleraderm</g:title>
+      <g:description>علاج مركز للهالات السوداء والانتفاخ تحت العين.</g:description>
       <g:link>http://nuna-beauty.com/?product=IT-006</g:link>
       <g:image_link>https://cdn.salla.sa/EZjdor/0af58d78-ff62-4e14-b302-cb8c862c073b-500x432.98969072165-cf6P4J8vMZnrIVxeqjExTMRkrlUiMvwIsKGnzmMt.png</g:image_link>
       <g:condition>new</g:condition>
       <g:availability>in_stock</g:availability>
       <g:price>150.00 SAR</g:price>
       <g:brand>Kleraderm</g:brand>
-      <g:google_product_category>567</g:google_product_category>
+      <g:google_product_category>473</g:google_product_category>
     </item>
 
-    <!-- قسم كريمات البنكوين والبهاق -->
+    <!-- قسم الكريمات والبنكوين -->
     <item>
       <g:id>CR-001</g:id>
-      <g:title>كريم البنكوين (ماك) 40% مع مقشر لعلاج البهاق</g:title>
-      <g:description>الحل الأمثل لتوحيد لون البشرة. عصار بإضافة مقشر الريتينويك بتركيز 0.05%.</g:description>
+      <g:title>كريم بنكوين (ماك) 40% + مقشر</g:title>
+      <g:description>كريم بنكوين عصار 40% مع مقشر ريتينويك لنتائج أسرع.</g:description>
       <g:link>http://nuna-beauty.com/?product=CR-001</g:link>
       <g:image_link>https://cdn.salla.sa/EZjdor/0ffb1fe3-8da7-428d-ae2c-67c2adfc7d73-500x361.11111111111-bnFKQv0dL9IRChvIjXkpK8wK0jkixrH27R08t0e8.png</g:image_link>
       <g:condition>new</g:condition>
@@ -94,8 +94,8 @@
     </item>
     <item>
       <g:id>CR-002</g:id>
-      <g:title>كريم بنكوين يونيكون 40% بالكوجيك (أبو بنت)</g:title>
-      <g:description>كريم لتوحيد البهاق مدعم بالكوجيك وألفا أربوتين لتفتيح فعال.</g:description>
+      <g:title>بنكوين يونيكون 40% كوجيك</g:title>
+      <g:description>كريم بنكوين يونيكون (أبو بنت) معزز بالكوجيك وألفا أربوتين.</g:description>
       <g:link>http://nuna-beauty.com/?product=CR-002</g:link>
       <g:image_link>https://cdn.salla.sa/EZjdor/cf93c255-e5f0-438e-a0c6-84a7240a1ca0-500x356.9431500466-3H3uNs7KDsbbWJ9PblbM0GVYSjv4tetO7mVYKpgr.jpg</g:image_link>
       <g:condition>new</g:condition>
@@ -106,8 +106,8 @@
     </item>
     <item>
       <g:id>CR-003</g:id>
-      <g:title>كريم بنكوين يونيكون 40% خام (أبو بنت)</g:title>
-      <g:description>كريم لتوحيد البهاق بتركيبة خام نقية.</g:description>
+      <g:title>بنكوين يونيكون 40% خام</g:title>
+      <g:description>كريم بنكوين يونيكون (أبو بنت) تركيبة خام نقية.</g:description>
       <g:link>http://nuna-beauty.com/?product=CR-003</g:link>
       <g:image_link>https://cdn.salla.sa/EZjdor/c89915dc-b838-441a-90c6-80876ab0a848-500x356.9431500466-3yi5yP9yokWAM5i8OicSYANeFE1JeLZegQ3MR4u9.jpg</g:image_link>
       <g:condition>new</g:condition>
@@ -118,8 +118,8 @@
     </item>
     <item>
       <g:id>CR-004</g:id>
-      <g:title>كريم البنكوين (ماك) 40% خام بدون مقشر</g:title>
-      <g:description>الحل الأمثل لتوحيد لون البشرة بتركيز 40% خالي من أي إضافات مقشرة.</g:description>
+      <g:title>كريم بنكوين (ماك) 40% خام</g:title>
+      <g:description>كريم بنكوين ماك تركيز 40% بدون مقشر.</g:description>
       <g:link>http://nuna-beauty.com/?product=CR-004</g:link>
       <g:image_link>https://cdn.salla.sa/EZjdor/49b998e5-81cd-41f1-8126-ef4155159b72-500x499.22480620155-Eb7QE25AU8wOXQBuUlt3UFSsCdhohHXAQHTwiXFB.png</g:image_link>
       <g:condition>new</g:condition>
@@ -130,9 +130,21 @@
     </item>
     <item>
       <g:id>CR-005</g:id>
-      <g:title>كريم معزز ومسرع للبنكوين - للوجه 60 جم</g:title>
-      <g:description>لتهيئة بشرة الوجه والمناطق الحساسة قبل استخدام البنكوين.</g:description>
+      <g:title>كريم بنكوين (ماك) 20%</g:title>
+      <g:description>تركيز مخفف للمناطق الحساسة والبدايات.</g:description>
       <g:link>http://nuna-beauty.com/?product=CR-005</g:link>
+      <g:image_link>https://cdn.salla.sa/EZjdor/4ce57bd0-a42b-4b94-94f7-7d40b0123af6-500x401.38888888889-lsfDHzNrfj2ZBsBvibLDWXm31FkR1y0krP8hcx11.jpg</g:image_link>
+      <g:condition>new</g:condition>
+      <g:availability>in_stock</g:availability>
+      <g:price>65.00 SAR</g:price>
+      <g:brand>MAC</g:brand>
+      <g:google_product_category>473</g:google_product_category>
+    </item>
+    <item>
+      <g:id>CR-006</g:id>
+      <g:title>كريم معزز ومسرع (للوجه) 60 جرام</g:title>
+      <g:description>لتهيئة بشرة الوجه قبل استخدام البنكوين.</g:description>
+      <g:link>http://nuna-beauty.com/?product=CR-006</g:link>
       <g:image_link>https://cdn.salla.sa/EZjdor/df6e1202-b4cd-48ed-b44d-cdfc2f85c567-375x500-qlFv7bu39drZEdJDG1KZ6zJiT3NeVapRI5xB5Pgj.png</g:image_link>
       <g:condition>new</g:condition>
       <g:availability>in_stock</g:availability>
@@ -141,10 +153,46 @@
       <g:google_product_category>473</g:google_product_category>
     </item>
     <item>
-      <g:id>CR-006</g:id>
-      <g:title>جهاز ليزر منزلي لإزالة الشعر بخاصية التبريد</g:title>
-      <g:description>ومضات غير محدودة لإزالة شعر الوجه والبكيني والجسم مع تبريد.</g:description>
-      <g:link>http://nuna-beauty.com/?product=CR-006</g:link>
+      <g:id>CR-007</g:id>
+      <g:title>كريم معزز ومسرع (للجسم) 60 جرام</g:title>
+      <g:description>لتهيئة بشرة الجسم قبل استخدام البنكوين.</g:description>
+      <g:link>http://nuna-beauty.com/?product=CR-007</g:link>
+      <g:image_link>https://cdn.salla.sa/EZjdor/cfbee0c0-4356-4a48-a4d3-655ecb833373-375x500-VpI5xoPA0rhgWC0ZN5DTMUG8WRG7bQaX4k2s7BpF.png</g:image_link>
+      <g:condition>new</g:condition>
+      <g:availability>in_stock</g:availability>
+      <g:price>250.00 SAR</g:price>
+      <g:brand>Nona Beauty</g:brand>
+      <g:google_product_category>473</g:google_product_category>
+    </item>
+    <item>
+      <g:id>CR-008</g:id>
+      <g:title>بنكوين يونيكون 80% كوجيك</g:title>
+      <g:description>تركيز عالي جداً معزز بالكوجيك للحالات المستعصية.</g:description>
+      <g:link>http://nuna-beauty.com/?product=CR-008</g:link>
+      <g:image_link>https://cdn.salla.sa/EZjdor/4ba0884b-1019-414c-a331-495d502ad090-500x356.9431500466-qgcmZB1VyNaRKGFesQTJy1BbEtLDwHigcuLw0LLz.jpg</g:image_link>
+      <g:condition>new</g:condition>
+      <g:availability>in_stock</g:availability>
+      <g:price>185.00 SAR</g:price>
+      <g:brand>Unicorn</g:brand>
+      <g:google_product_category>473</g:google_product_category>
+    </item>
+    <item>
+      <g:id>CR-009</g:id>
+      <g:title>بنكوين يونيكون 80% خام</g:title>
+      <g:description>تركيز عالي خام للحالات الصعبة.</g:description>
+      <g:link>http://nuna-beauty.com/?product=CR-009</g:link>
+      <g:image_link>https://cdn.salla.sa/EZjdor/1683187a-b02b-4a40-9f24-4a122df74d9e-500x356.9431500466-d2g5c0vgWAA46K4p8Fr7618JQVntoF8TSMfzK6DF.jpg</g:image_link>
+      <g:condition>new</g:condition>
+      <g:availability>in_stock</g:availability>
+      <g:price>185.00 SAR</g:price>
+      <g:brand>Unicorn</g:brand>
+      <g:google_product_category>473</g:google_product_category>
+    </item>
+    <item>
+      <g:id>CR-010</g:id>
+      <g:title>جهاز ليزر منزلي تبريد</g:title>
+      <g:description>إزالة شعر بالتبريد ومضات لا نهائية للوجه والجسم.</g:description>
+      <g:link>http://nuna-beauty.com/?product=CR-010</g:link>
       <g:image_link>https://cdn.salla.sa/EZjdor/20164d6a-6c16-452e-a957-bdd4beffb73c-500x431.94444444444-HKsgyEvwjSDfyrsiQNTrmyCfunyuYnbBYZZBUaUx.jpg</g:image_link>
       <g:condition>new</g:condition>
       <g:availability>in_stock</g:availability>
@@ -153,10 +201,94 @@
       <g:google_product_category>559</g:google_product_category>
     </item>
     <item>
-      <g:id>CR-007</g:id>
-      <g:title>بودرة بنكوين خام هندي (كيلو) للبهاق</g:title>
-      <g:description>بودرة خام أصلية لتحضير كريمات علاج البهاق وتوحيد اللون.</g:description>
-      <g:link>http://nuna-beauty.com/?product=CR-007</g:link>
+      <g:id>CR-011</g:id>
+      <g:title>كريم بنكوين تركيبة طبية 40% (60 جرام)</g:title>
+      <g:description>تركيبة طبية خاصة ومكثفة حجم كبير.</g:description>
+      <g:link>http://nuna-beauty.com/?product=CR-011</g:link>
+      <g:image_link>https://cdn.salla.sa/EZjdor/0f26e2fa-6009-49a7-b51c-851b5873eb27-281.25x500-izLUfGP2senpHuLBUJhxFjWzHvNGrTDwx4MtuSve.jpg</g:image_link>
+      <g:condition>new</g:condition>
+      <g:availability>in_stock</g:availability>
+      <g:price>440.00 SAR</g:price>
+      <g:brand>Generic</g:brand>
+      <g:google_product_category>473</g:google_product_category>
+    </item>
+    <item>
+      <g:id>CR-012</g:id>
+      <g:title>Sensequin Cream تفتيح المناطق الحساسة</g:title>
+      <g:description>تفتيح آمن للمناطق الحساسة.</g:description>
+      <g:link>http://nuna-beauty.com/?product=CR-012</g:link>
+      <g:image_link>https://cdn.salla.sa/EZjdor/c0e28e3a-9491-42c8-b8ca-610bbf9e84a8-500x402.4024024024-n7wukXrAAmUKjZd0v0vuCqVvk8V7oBWAHOQibG7x.jpg</g:image_link>
+      <g:condition>new</g:condition>
+      <g:availability>in_stock</g:availability>
+      <g:price>220.00 SAR</g:price>
+      <g:brand>Generic</g:brand>
+      <g:google_product_category>473</g:google_product_category>
+    </item>
+    <item>
+      <g:id>CR-013</g:id>
+      <g:title>Rwaquin Body Cream (جلد الوزة)</g:title>
+      <g:description>علاج جلد الوزة والشعر تحت الجلد.</g:description>
+      <g:link>http://nuna-beauty.com/?product=CR-013</g:link>
+      <g:image_link>https://cdn.salla.sa/EZjdor/0db4fd18-106f-4ab3-b022-932d14ad7130-500x402.4024024024-OcsyO7jjwH1TAGRANp981bKG6KjtukeDfzMcsyTu.jpg</g:image_link>
+      <g:condition>new</g:condition>
+      <g:availability>in_stock</g:availability>
+      <g:price>250.00 SAR</g:price>
+      <g:brand>Generic</g:brand>
+      <g:google_product_category>473</g:google_product_category>
+    </item>
+    <item>
+      <g:id>CR-014</g:id>
+      <g:title>Knee whitening تفتيح الركب والاكواع</g:title>
+      <g:description>تفتيح قوي وعميق للركب والأكواع.</g:description>
+      <g:link>http://nuna-beauty.com/?product=CR-014</g:link>
+      <g:image_link>https://cdn.salla.sa/EZjdor/c1fb14fd-bb2a-47a9-9036-1da9b21ca1fb-500x402.4024024024-HkcwElPFsw3obFSaWSMWcxEh6g7FeHqUAbAXzf0i.jpg</g:image_link>
+      <g:condition>new</g:condition>
+      <g:availability>in_stock</g:availability>
+      <g:price>250.00 SAR</g:price>
+      <g:brand>Generic</g:brand>
+      <g:google_product_category>473</g:google_product_category>
+    </item>
+    <item>
+      <g:id>CR-015</g:id>
+      <g:title>MBS Cream للكلف العميق</g:title>
+      <g:description>علاج الكلف العميق والتصبغات العنيدة.</g:description>
+      <g:link>http://nuna-beauty.com/?product=CR-015</g:link>
+      <g:image_link>https://cdn.salla.sa/EZjdor/535515a3-aa90-4e30-b8b0-9fffebd64b37-500x402.4024024024-EmGcxKDMYrf0izC2ykSsRQ4lmnaw5LOCDyZ3vkmV.jpg</g:image_link>
+      <g:condition>new</g:condition>
+      <g:availability>in_stock</g:availability>
+      <g:price>210.00 SAR</g:price>
+      <g:brand>Generic</g:brand>
+      <g:google_product_category>473</g:google_product_category>
+    </item>
+    <item>
+      <g:id>CR-016</g:id>
+      <g:title>جهاز إزالة الوشم والنمش</g:title>
+      <g:description>جهاز فعال لإزالة الوشم والنمش والكلف والبقع الداكنة.</g:description>
+      <g:link>http://nuna-beauty.com/?product=CR-016</g:link>
+      <g:image_link>https://cdn.salla.sa/EZjdor/1da8bc47-e884-49d2-a9c9-d3abcce1bec0-500x500-ByL7d480WFBZR5M804yVEWZ8a6QNbCz8dRQDO2lS.jpg</g:image_link>
+      <g:condition>new</g:condition>
+      <g:availability>in_stock</g:availability>
+      <g:price>2200.00 SAR</g:price>
+      <g:brand>Generic</g:brand>
+      <g:google_product_category>559</g:google_product_category>
+    </item>
+    <item>
+      <g:id>CR-017</g:id>
+      <g:title>كريم مخدر موضعي 96%</g:title>
+      <g:description>تخدير قوي للمنطقة بدرجة عالية.</g:description>
+      <g:link>http://nuna-beauty.com/?product=CR-017</g:link>
+      <g:image_link>https://cdn.salla.sa/EZjdor/764f85cf-2ea2-46c5-9fd6-4d7efd938821-500x475-nSON5EMUVVJ8jCVX9GL48nh5crkRvQ5Ei5embcoi.jpg</g:image_link>
+      <g:condition>new</g:condition>
+      <g:availability>in_stock</g:availability>
+      <g:price>30.00 SAR</g:price>
+      <g:brand>Generic</g:brand>
+      <g:google_product_category>473</g:google_product_category>
+    </item>
+    <item>
+      <g:id>CR-018</g:id>
+      <g:title>بودرة بنكوين خام هندي (1 كيلو)</g:title>
+      <g:description>بودرة خام أصلية للبهاق.</g:description>
+      <g:link>http://nuna-beauty.com/?product=CR-018</g:link>
       <g:image_link>https://cdn.salla.sa/EZjdor/e55773e7-0d34-4758-8da3-5d12a17e1b2a-500x399.02080783354-V60M5divxq2jWb6SXpftt5IdM78L6k6SlaIQjOXi.jpg</g:image_link>
       <g:condition>new</g:condition>
       <g:availability>in_stock</g:availability>
@@ -165,14 +297,26 @@
       <g:google_product_category>473</g:google_product_category>
     </item>
     <item>
-      <g:id>CR-008</g:id>
-      <g:title>كريم Sensequin لتفتيح المناطق الحساسة 60 جم</g:title>
-      <g:description>تركيبة خاصة لتفتيح وتبييض المناطق الحساسة بأمان.</g:description>
-      <g:link>http://nuna-beauty.com/?product=CR-008</g:link>
-      <g:image_link>https://cdn.salla.sa/EZjdor/c0e28e3a-9491-42c8-b8ca-610bbf9e84a8-500x402.4024024024-n7wukXrAAmUKjZd0v0vuCqVvk8V7oBWAHOQibG7x.jpg</g:image_link>
+      <g:id>CR-019</g:id>
+      <g:title>كريم بنكوين (ديرماك) 40%</g:title>
+      <g:description>توحيد لون البشرة ماركة ديرماك.</g:description>
+      <g:link>http://nuna-beauty.com/?product=CR-019</g:link>
+      <g:image_link>https://cdn.salla.sa/EZjdor/d1fc97fe-9f8c-4fbc-9761-78a158d0d5a2-500x368.05555555556-QVWMtBtzBKI3QS0soAYgcGxq7qlaI03kgigQqkDD.jpg</g:image_link>
       <g:condition>new</g:condition>
       <g:availability>in_stock</g:availability>
-      <g:price>220.00 SAR</g:price>
+      <g:price>190.00 SAR</g:price>
+      <g:brand>Dermac</g:brand>
+      <g:google_product_category>473</g:google_product_category>
+    </item>
+    <item>
+      <g:id>CR-020</g:id>
+      <g:title>كريم بنكوين (أبو علم) 60%</g:title>
+      <g:description>كريم بنكوين تركيز متوسط.</g:description>
+      <g:link>http://nuna-beauty.com/?product=CR-020</g:link>
+      <g:image_link>https://cdn.salla.sa/EZjdor/a47579b7-94d6-41c1-8008-1410701a6784-500x433.60433604336-ylMRkB8vhX81wgzSlOPPQz5Hf6ZA1th0RClRFCAW.jpg</g:image_link>
+      <g:condition>new</g:condition>
+      <g:availability>in_stock</g:availability>
+      <g:price>185.00 SAR</g:price>
       <g:brand>Generic</g:brand>
       <g:google_product_category>473</g:google_product_category>
     </item>
@@ -181,7 +325,7 @@
     <item>
       <g:id>PE-001</g:id>
       <g:title>محلول تقشير حمض اللاكتيك 50 مل</g:title>
-      <g:description>تقشير لطيف ومرطب للبشرة، مناسب للتفتيح والنضارة.</g:description>
+      <g:description>تقشير سطحي لطيف وترطيب للبشرة.</g:description>
       <g:link>http://nuna-beauty.com/?product=PE-001</g:link>
       <g:image_link>https://cdn.salla.sa/EZjdor/5cfdeaa3-baff-4030-bc07-4bb82369593e-342.35668789809x500-FlzMxwEh2dpifUNgtf1PK6B8EDjDHSxuezjtgdpW.jpg</g:image_link>
       <g:condition>new</g:condition>
@@ -192,8 +336,8 @@
     </item>
     <item>
       <g:id>PE-002</g:id>
-      <g:title>صابونة يونيكون Monobenzone الطبية</g:title>
-      <g:description>صابونة طبية مساعدة في علاج البهاق وتوحيد اللون.</g:description>
+      <g:title>صابونة يونيكون Monobenzone</g:title>
+      <g:description>صابونة طبية مساعدة للعلاج.</g:description>
       <g:link>http://nuna-beauty.com/?product=PE-002</g:link>
       <g:image_link>https://cdn.salla.sa/EZjdor/9254f1af-a1ab-404c-ae87-934f6e891fa4-500x459.28338762215-ZHU9ALiDANnStEjIqz6xHIVf78fuyaMf2xP7OXrz.jpg</g:image_link>
       <g:condition>new</g:condition>
@@ -204,9 +348,21 @@
     </item>
     <item>
       <g:id>PE-003</g:id>
-      <g:title>مقشر ارتن أي (Aretin-A) لحب الشباب</g:title>
-      <g:description>علاج فعال وآمن لحب الشباب والبقع الداكنة.</g:description>
+      <g:title>محلول يونيكون لتقشير العميق</g:title>
+      <g:description>محلول تقشير عميق للبشرة.</g:description>
       <g:link>http://nuna-beauty.com/?product=PE-003</g:link>
+      <g:image_link>https://cdn.salla.sa/EZjdor/79f611eb-bb65-4017-a931-fd0cdf2666ad-414.54352441614x500-rKiZeE9s1fFcGUMq5Tn4KyRTPo7IXClMMAdAlqbe.jpg</g:image_link>
+      <g:condition>new</g:condition>
+      <g:availability>in_stock</g:availability>
+      <g:price>155.00 SAR</g:price>
+      <g:brand>Unicorn</g:brand>
+      <g:google_product_category>473</g:google_product_category>
+    </item>
+    <item>
+      <g:id>PE-004</g:id>
+      <g:title>مقشر ارتن أي (Aretin-A)</g:title>
+      <g:description>علاج فعال وآمن لحب الشباب وآثاره.</g:description>
+      <g:link>http://nuna-beauty.com/?product=PE-004</g:link>
       <g:image_link>https://cdn.salla.sa/EZjdor/2192a1be-bdf2-4225-9ae0-520332f084e6-500x428.1581485053-soTYW9TcS2yXzO2uNwZiNHmokdTw5af4GzhvlFqi.jpg</g:image_link>
       <g:condition>new</g:condition>
       <g:availability>in_stock</g:availability>
@@ -215,15 +371,39 @@
       <g:google_product_category>473</g:google_product_category>
     </item>
     <item>
-      <g:id>PE-004</g:id>
+      <g:id>PE-005</g:id>
       <g:title>جل فازلين طبي نقي 1000 جرام</g:title>
-      <g:description>للحماية القصوى من الجفاف الحاد للبشرة بدون إضافات.</g:description>
-      <g:link>http://nuna-beauty.com/?product=PE-004</g:link>
+      <g:description>حماية قصوى من الجفاف والتشقق.</g:description>
+      <g:link>http://nuna-beauty.com/?product=PE-005</g:link>
       <g:image_link>https://cdn.salla.sa/EZjdor/7816b78a-d5c2-4347-8346-2bc1e6de130d-359.64035964036x500-5jQapBuWn5hau7NgtnwQjbnmoXQrJlgM2yHeT1v3.png</g:image_link>
       <g:condition>new</g:condition>
       <g:availability>in_stock</g:availability>
       <g:price>75.00 SAR</g:price>
       <g:brand>Vaseline</g:brand>
+      <g:google_product_category>473</g:google_product_category>
+    </item>
+    <item>
+      <g:id>PE-006</g:id>
+      <g:title>محلول تقشير TCA 50%</g:title>
+      <g:description>تقشير كيميائي متوسط إلى عميق.</g:description>
+      <g:link>http://nuna-beauty.com/?product=PE-006</g:link>
+      <g:image_link>https://cdn.salla.sa/EZjdor/a8a86b11-33bc-4490-bcc8-020ba0fe28c4-500x487.11063372718-CJZ4P7e6AmAfWZaEys2dpmPo5oWEXQlsv7ZwmrPY.jpg</g:image_link>
+      <g:condition>new</g:condition>
+      <g:availability>in_stock</g:availability>
+      <g:price>155.90 SAR</g:price>
+      <g:brand>Generic</g:brand>
+      <g:google_product_category>473</g:google_product_category>
+    </item>
+    <item>
+      <g:id>PE-007</g:id>
+      <g:title>مقشر حمض الريتينوك</g:title>
+      <g:description>تجديد الخلايا وتفتيح قوي عالي الفعالية.</g:description>
+      <g:link>http://nuna-beauty.com/?product=PE-007</g:link>
+      <g:image_link>https://cdn.salla.sa/EZjdor/0355154d-f720-4338-a802-2f6c4072e97c-500x489.93644067797-RKm8ti6ZCTfz2SDRKD2u65xP3OW8NjZVCfGltypi.jpg</g:image_link>
+      <g:condition>new</g:condition>
+      <g:availability>in_stock</g:availability>
+      <g:price>140.00 SAR</g:price>
+      <g:brand>Generic</g:brand>
       <g:google_product_category>473</g:google_product_category>
     </item>
   </channel>
